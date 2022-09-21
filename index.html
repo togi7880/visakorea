@@ -1,0 +1,2396 @@
+
+
+<!DOCTYPE html>
+<html lang="ko">
+
+<!-- Mirrored from www.visa.go.kr/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 21 Sep 2022 15:26:51 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+	
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/><!-- 호환성보기 제거 -->
+<meta name="title" content="KOREA VISA PORTAL"/>
+<meta name="author" content="KOREA VISA PORTAL"/>
+<meta name="keywords" content="KOREA VISA PORTAL"/>
+<title>KOREA VISA PORTAL</title>
+  
+  
+
+
+
+
+
+
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"/>
+<link rel="icon" href="images/favicon_m.ico" type="image/x-icon"/>
+
+<!-- css -->
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+<!--[if lte IE 7]><link rel="stylesheet" type="text/css" href="/css/ie7.css" /><![endif]-->
+
+<!-- calendar css -->
+<link href="css/jquery-ui-1.10.4.custom.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript">
+	//<![CDATA[
+	// 세션 관련 스크립트 변수 설정
+	var gfv_seLang = 'KO';
+	var gfv_flagYn = "";
+	
+	// 날짜 관련 스크립트 변수 설정
+	var gfv_time = new Date("2022","8","22");	
+	var gfv_month = gfv_time.getMonth()+1;	
+	gfv_month = (gfv_month.toString().length == 1) ? "0" + gfv_month : gfv_month;	
+	var gfv_date = (gfv_time.getDate().toString().length == 1) ? "0" + gfv_time.getDate() : gfv_time.getDate();
+	var gfv_currentDate = gfv_time.getFullYear() + "-" + gfv_month + "-" + gfv_date;
+	// ]]>
+</script>
+
+<!-- jQuery -->
+<script type="text/javascript" src="js/jquery/jquery-1.10.2.js" ></script>
+<script type="text/javascript" src="js/jquery/jquery.form.js" ></script>
+<script type="text/javascript" src="js/json/json2.js" ></script> 
+<script type="text/javascript" src="js/jquery/jquery-ui-1.10.4.custom.js" ></script>
+
+<!-- 공통 -->    
+<script type="text/javascript" src="js/common.js" ></script>  
+<script type="text/javascript" src="js/dateUtils.js" ></script>
+<script type="text/javascript" src="js/etcUtils.js" ></script>
+<script type="text/javascript" src="js/numberUtils.js" ></script>
+<script type="text/javascript" src="js/stringUtils.js" ></script>
+<script type="text/javascript" src="js/validationUtils.js" ></script>
+<script type="text/javascript" src="js/fileUtils.js" ></script>
+
+<!-- rexpert -->    
+
+
+<!-- 마스크 -->
+<script type="text/javascript" src="js/mask/public.js" ></script>
+<script type="text/javascript" src="js/mask/contact.js" ></script>
+<script type="text/javascript" src="js/mask/ibmaskedit.js" ></script>
+<script type="text/javascript" src="js/mask/ibmaskeditinfo.js" ></script>
+<script type="text/javascript" src="js/mask/iepngfix_tilebg.js" ></script>
+<script type="text/javascript" src="js/mask/jquery.cookie.js" ></script>
+<script type="text/javascript" src="js/mask/jquery.easing.1.3.js" ></script>
+
+
+
+	<script type="text/javascript">
+	//<![CDATA[
+		$(document).ready(function() {
+			// skip navi 설정
+			$("#u_skip_a").on("focusin",function(){
+				$(this).addClass('on');
+			}).on("focusout",function(){
+				$(this).removeClass('on');
+			});
+		});
+	//]]>
+	</script>
+	
+</head>
+
+<body class="ko">
+
+	<!-- skip_nav -->
+	<div id="u_skip">
+		<a href="#m_con01" id="u_skip_a"><span>본문 바로가기</span></a>
+	</div>
+	<!-- // skip_nav -->
+	
+	<!-- wrap -->
+	<div id="wrap">
+		<!-- main_header -->
+		<div id="main_header">
+			
+
+
+
+<script type="text/javascript">
+//<![CDATA[
+	var images = ['m_visual_01.jpg', 'error.html', 'error.html', 'error.html', 'm_visual_05.jpg']; /*랜덤 시킬 비주얼 이미지 파일명*/
+	$(document).ready(function() {		
+		$('<img src="/images/common/' + images[Math.floor(Math.random() * images.length)] + '" alt="한국 대한민국 비자포털은 복잡한 사증업무에 대한 정확한 안내와 쉽고 간편한 신청,발급 서비스를 제공합니다" />').appendTo('#m_visual'); /*이미지 경로 서버경로에 맞게 변경*/
+		$('.main_menu > li').on('mouseover focusin',function(){
+			$('.main_menu > li').removeClass('on');
+			$(this).addClass('on');
+		});
+		
+		// 로고 페이지 이벤트 적용
+		$("#mainLogoImg, #top_a_home").on("click", function(){
+			var mainSubmit = new ComSubmit();
+			mainSubmit.addParam("LANG_TYPE", gfv_seLang);
+			mainSubmit.setUrl("index.html");
+			mainSubmit.tran();
+		});
+		
+		// 메뉴 a 태그 이벤트 적용
+		$("a[id^='lnb_a_menu_']").on("click", function(e){
+			var tagLnbId = $(this).attr("id");		// 우측 메뉴 태그 아이디
+			var menuLnbId = tagLnbId.replace("lnb_a_menu_", "");	// 우측 메뉴아이디 추출
+			
+			var permissionYn = $("#lnb_span_permission_" + menuLnbId).text(); 
+			var parentMenuId = $("#lnb_span_parent_menu_" + menuLnbId).text(); 
+			var sememid = "TEMPUSER";
+			
+			
+			//하이코리아 민원서식 연결.
+			if (menuLnbId == '10108') {
+				var url ='http://www.hikorea.go.kr/board/BoardApplicationListR.pt' //하이코리아 민원서식 페이지.
+					
+				window.open(url,"_blank");
+				return;
+			}
+			
+			if(permissionYn == 'N'){	// 접근 여부
+				if("99" == 99){
+					var strConfirmMsgCode = '';
+					if(parentMenuId == "103"){
+						strConfirmMsgCode = "LOGIN_ENTER_SEARCH";
+					}else{
+						strConfirmMsgCode = "LOGIN_ENTER";
+					}
+					
+					gfn_confirm(strConfirmMsgCode, null, function(){
+						var menuSubmit = new ComSubmit();
+						if(menuLnbId == '10203'){
+							menuSubmit.addParam("VIEW_GB", "loginID");
+							menuSubmit.addParam("FORWARD_URL", "10203");
+						}
+						menuSubmit.setUrl("/openPage.do" + "?MENU_ID=10602");
+						menuSubmit.tran();
+					}, function(){
+					});
+				}else{
+					gfn_alert("LOGIN_ENTER_TEMP");
+				}
+			}else if(permissionYn == 'Y'){
+				var menuSubmit = new ComSubmit();
+				if(menuLnbId == '10407' || menuLnbId == '10406'){					
+					menuSubmit.addParam("FAQ_GB", "6");
+					menuSubmit.addParam("P_MENU", "104");
+				}
+				menuSubmit.setUrl("/openPage.do" + "?MENU_ID=" + menuLnbId);
+				menuSubmit.tran();
+			}
+		});
+		
+		
+		$("#top_a_login").on("click", function(){
+			var menuSubmit = new ComSubmit();
+			menuSubmit.setUrl("/openPage.do" + "?MENU_ID=" + "10602");
+			menuSubmit.tran();
+		});
+		
+		
+		
+		$("#top_a_logout").on("click", function(e){
+			var logoutSubmit = new ComSubmit();
+			logoutSubmit.setUrl("/logout.do"); 
+			logoutSubmit.tran();
+		});
+		
+		
+		
+		 
+		$("#top_a_season").on('click', function(){
+			var menuSubmit = new ComSubmit();
+			menuSubmit.setUrl("/openPage.do" + "?MENU_ID=" + "11001");
+			menuSubmit.tran();
+		});
+		
+		 
+		$("#top_a_mypage, #top_a_user").on('click', function(){
+			var menuSubmit = new ComSubmit();
+			menuSubmit.setUrl("/openPage.do" + "?MENU_ID=" + "10701");
+			menuSubmit.tran();
+		});
+		
+		 
+		$("#top_a_member").on('click', function(){
+			if('KO' != 'KO' ){
+				gfn_alert("MSG_JOIN_TARGET_NOTICE");
+			}else{
+				var menuSubmit = new ComSubmit();
+				menuSubmit.setUrl("/openPage.do" + "?MENU_ID=" + "10601");
+				menuSubmit.tran();
+			}
+		});
+		
+		
+    	$("#top_a_sitemap").on("click", function(){
+	    	var menuSubmit = new ComSubmit();
+			menuSubmit.setUrl("/openPage.do" + "?MENU_ID=" + "10801");
+			menuSubmit.tran();
+    	});
+		
+		
+		$("#top_a_lang_ko").on('click', function(){
+			gfn_changeLang("KO", "ko");
+		});
+		
+		
+		$("#top_a_lang_en").on('click', function(){
+			gfn_changeLang("EN", "en");
+		});
+		
+		
+		$("#top_a_lang_ch").on('click', function(){
+			gfn_changeLang("CH", "zh");
+		});
+		
+		
+		document.oncontextmenu = function(e){
+			if(e){
+				e.preventDefault();	
+			}else{
+				event.keyCode = 0;
+				event.returnValue = false;
+			}
+		};
+		
+		
+		$(document).bind("keydown", function(e){
+			ctrl = (document.all) ? event.ctrlKey:e.modifiers & Event.CONTROL_MASK;
+			var key = (e) ? e.keyCode : event.keyCode;
+			if(key == 8 && $("input:focus").size() == 1) {			// input tag 에서는 backspace가 되도록
+				return;
+			}else if(key == 8 && $("textarea:focus").size() == 1) {	// textarea tag 에서는 backspace가 되도록
+				return;
+			}else if(key == 8 || key == 116 || key == 123){
+				if(e){
+					e.preventDefault();
+				}else{
+					event.keycode = 0;
+					event.returnValue = false;
+				}
+			}else if(ctrl && key == 83){
+				
+				if(e){
+					e.preventDefault();
+				}else{
+					event.keycode = 0;
+					event.returnValue = false;
+				}
+			}else if(ctrl && key == 80){
+				
+				if(e){
+					e.preventDefault();
+				}else{
+					event.keycode = 0;
+					event.returnValue = false;
+				}
+			}
+		});
+	});
+	
+	function gfn_changeLang(lang, lowLang){
+		var langSubmit = new ComSubmit();
+		langSubmit.setUrl("/cmm/openLang.do");
+		langSubmit.addParam("LANG", lang);
+		langSubmit.addParam("LOW_LANG", lowLang);
+		langSubmit.addParam("REDIRECT_URI", "index.html");
+		langSubmit.tran();
+	}
+	
+//]]>
+</script>
+
+<!-- main_header -->
+<div class="gnbwrap">
+	<h1 class="m_logo">
+		<a href="#this" id="mainLogoImg"><img src="images/common/m_logo_KO.png" alt="대한민국 비자포털(비자포털 방문을 환영합니다.)" /></a>
+	</h1>
+	<!-- 탑메뉴 -->
+	<ul class="top_m">
+										
+			
+				
+					<li><a href="#this" id="top_a_home" class="user_home">홈</a></li>		
+					<li><a href="#this" id="top_a_login">로그인</a><span></span></li>
+					<li><a href="#this" id="top_a_member">회원가입</a><span></span></li>
+				
+				
+				
+			
+			
+		
+		
+		
+			<li id="top_a_sitemap"><a href="#this">사이트맵<span class="user_map"></span></a></li>
+		
+		
+		
+		
+		<li><a href="#this" id="top_a_lang_en" class="change_lang">ENGLISH</a></li>
+		<li><a href="#this" id="top_a_lang_ch" class="change_lang">中文</a></li>
+		
+		
+		
+		
+	</ul>
+	<!-- // 탑메뉴 -->
+	<!-- gnb -->
+	<ul class="main_menu">
+		
+		
+			
+			
+				
+					
+					
+						<li>
+							<a href="#this">비자안내</a>
+							<ul class="m_2dep">
+					
+				
+			
+			
+			
+			
+		
+			
+			
+			
+				
+				<li>
+					
+						
+						
+						
+							<a href="#this" id="lnb_a_menu_10101">비자 내비게이터</a>
+							<span id="lnb_span_permission_10101" class="dis_none">Y</span>
+							<span id="lnb_span_parent_menu_10101" class="dis_none">101</span>
+							<span id="lnb_span_ko_use_yn_10101" class="dis_none"></span>
+							<span id="lnb_span_en_use_yn_10101" class="dis_none"></span>
+							<span id="lnb_span_ch_use_yn_10101" class="dis_none"></span>
+						
+					
+				</li>
+			
+			
+		
+			
+			
+			
+				
+				<li>
+					
+						
+						
+						
+							<a href="#this" id="lnb_a_menu_10102">입국목적별 비자 종류</a>
+							<span id="lnb_span_permission_10102" class="dis_none">Y</span>
+							<span id="lnb_span_parent_menu_10102" class="dis_none">101</span>
+							<span id="lnb_span_ko_use_yn_10102" class="dis_none"></span>
+							<span id="lnb_span_en_use_yn_10102" class="dis_none"></span>
+							<span id="lnb_span_ch_use_yn_10102" class="dis_none"></span>
+						
+					
+				</li>
+			
+			
+		
+			
+			
+			
+				
+				<li>
+					
+						
+						
+						
+							<a href="#this" id="lnb_a_menu_10105">신청절차</a>
+							<span id="lnb_span_permission_10105" class="dis_none">Y</span>
+							<span id="lnb_span_parent_menu_10105" class="dis_none">101</span>
+							<span id="lnb_span_ko_use_yn_10105" class="dis_none"></span>
+							<span id="lnb_span_en_use_yn_10105" class="dis_none"></span>
+							<span id="lnb_span_ch_use_yn_10105" class="dis_none"></span>
+						
+					
+				</li>
+			
+			
+		
+			
+			
+			
+				
+				<li>
+					
+						
+						
+								<a href="#this" id="lnb_a_menu_10108" title="새 창 열기">각종 신청 서식</a>
+								<span id="lnb_span_permission_10108" class="dis_none">Y</span>
+								<span id="lnb_span_parent_menu_10108" class="dis_none">101</span>
+								<span id="lnb_span_ko_use_yn_10108" class="dis_none"></span>
+								<span id="lnb_span_en_use_yn_10108" class="dis_none"></span>
+								<span id="lnb_span_ch_use_yn_10108" class="dis_none"></span>
+						
+						
+					
+				</li>
+			
+			
+		
+			
+			
+			
+				
+				<li>
+					
+						
+						
+						
+							<a href="#this" id="lnb_a_menu_10103">수수료</a>
+							<span id="lnb_span_permission_10103" class="dis_none">Y</span>
+							<span id="lnb_span_parent_menu_10103" class="dis_none">101</span>
+							<span id="lnb_span_ko_use_yn_10103" class="dis_none"></span>
+							<span id="lnb_span_en_use_yn_10103" class="dis_none"></span>
+							<span id="lnb_span_ch_use_yn_10103" class="dis_none"></span>
+						
+					
+				</li>
+			
+			
+		
+			
+			
+			
+				
+				<li>
+					
+						
+						
+						
+							<a href="#this" id="lnb_a_menu_10107">입국 및 체류</a>
+							<span id="lnb_span_permission_10107" class="dis_none">Y</span>
+							<span id="lnb_span_parent_menu_10107" class="dis_none">101</span>
+							<span id="lnb_span_ko_use_yn_10107" class="dis_none"></span>
+							<span id="lnb_span_en_use_yn_10107" class="dis_none"></span>
+							<span id="lnb_span_ch_use_yn_10107" class="dis_none"></span>
+						
+					
+				</li>
+			
+			
+		
+			
+			
+			
+				
+				<li>
+					
+						
+						
+						
+							<a href="#this" id="lnb_a_menu_10106">재외공관 안내</a>
+							<span id="lnb_span_permission_10106" class="dis_none">Y</span>
+							<span id="lnb_span_parent_menu_10106" class="dis_none">101</span>
+							<span id="lnb_span_ko_use_yn_10106" class="dis_none"></span>
+							<span id="lnb_span_en_use_yn_10106" class="dis_none"></span>
+							<span id="lnb_span_ch_use_yn_10106" class="dis_none"></span>
+						
+					
+				</li>
+			
+			
+					</ul>
+				</li>
+				
+			
+		
+			
+			
+				
+					
+					
+						<li>
+							<a href="#this">신청</a>
+							<ul class="m_2dep">
+					
+				
+			
+			
+			
+			
+		
+			
+			
+			
+				
+				<li>
+					
+						
+						
+						
+							<a href="#this" id="lnb_a_menu_10205">비자발급인정서</a>
+							<span id="lnb_span_permission_10205" class="dis_none">Y</span>
+							<span id="lnb_span_parent_menu_10205" class="dis_none">102</span>
+							<span id="lnb_span_ko_use_yn_10205" class="dis_none"></span>
+							<span id="lnb_span_en_use_yn_10205" class="dis_none"></span>
+							<span id="lnb_span_ch_use_yn_10205" class="dis_none"></span>
+						
+					
+				</li>
+			
+			
+		
+			
+			
+			
+				
+				<li>
+					
+						
+						
+						
+							<a href="#this" id="lnb_a_menu_10201">전자비자(개인)</a>
+							<span id="lnb_span_permission_10201" class="dis_none">Y</span>
+							<span id="lnb_span_parent_menu_10201" class="dis_none">102</span>
+							<span id="lnb_span_ko_use_yn_10201" class="dis_none"></span>
+							<span id="lnb_span_en_use_yn_10201" class="dis_none"></span>
+							<span id="lnb_span_ch_use_yn_10201" class="dis_none"></span>
+						
+					
+				</li>
+			
+			
+		
+			
+			
+			
+			
+			
+		
+			
+			
+			
+				
+				<li>
+					
+						
+						
+						
+							<a href="#this" id="lnb_a_menu_10204">전자서식(비자신청서)</a>
+							<span id="lnb_span_permission_10204" class="dis_none">Y</span>
+							<span id="lnb_span_parent_menu_10204" class="dis_none">102</span>
+							<span id="lnb_span_ko_use_yn_10204" class="dis_none"></span>
+							<span id="lnb_span_en_use_yn_10204" class="dis_none"></span>
+							<span id="lnb_span_ch_use_yn_10204" class="dis_none"></span>
+						
+					
+				</li>
+			
+			
+		
+			
+			
+			
+			
+			
+		
+			
+			
+			
+				
+				<li>
+					
+						
+						
+						
+							<a href="#this" id="lnb_a_menu_10207">방문취업 사전신청</a>
+							<span id="lnb_span_permission_10207" class="dis_none">Y</span>
+							<span id="lnb_span_parent_menu_10207" class="dis_none">102</span>
+							<span id="lnb_span_ko_use_yn_10207" class="dis_none"></span>
+							<span id="lnb_span_en_use_yn_10207" class="dis_none"></span>
+							<span id="lnb_span_ch_use_yn_10207" class="dis_none"></span>
+						
+					
+				</li>
+			
+			
+		
+			
+			
+			
+				
+				<li>
+					
+						
+						
+						
+							<a href="#this" id="lnb_a_menu_10208">비자여권정보변경</a>
+							<span id="lnb_span_permission_10208" class="dis_none">Y</span>
+							<span id="lnb_span_parent_menu_10208" class="dis_none">102</span>
+							<span id="lnb_span_ko_use_yn_10208" class="dis_none"></span>
+							<span id="lnb_span_en_use_yn_10208" class="dis_none"></span>
+							<span id="lnb_span_ch_use_yn_10208" class="dis_none"></span>
+						
+					
+				</li>
+			
+			
+					</ul>
+				</li>
+				
+			
+		
+			
+			
+				
+					
+					
+						<li>
+							<a href="#this">조회/발급</a>
+							<ul class="m_2dep">
+					
+				
+			
+			
+			
+			
+		
+			
+			
+			
+				
+				<li>
+					
+						
+						
+						
+							<a href="#this" id="lnb_a_menu_10301">진행현황 조회 및 출력</a>
+							<span id="lnb_span_permission_10301" class="dis_none">Y</span>
+							<span id="lnb_span_parent_menu_10301" class="dis_none">103</span>
+							<span id="lnb_span_ko_use_yn_10301" class="dis_none"></span>
+							<span id="lnb_span_en_use_yn_10301" class="dis_none"></span>
+							<span id="lnb_span_ch_use_yn_10301" class="dis_none"></span>
+						
+					
+				</li>
+			
+			
+		
+			
+			
+			
+			
+			
+		
+			
+			
+			
+			
+			
+		
+			
+			
+			
+			
+			
+		
+			
+			
+			
+			
+			
+		
+			
+			
+			
+			
+			
+		
+			
+			
+			
+				
+				<li>
+					
+						
+						
+						
+							<a href="#this" id="lnb_a_menu_10302">방문취업당첨확인</a>
+							<span id="lnb_span_permission_10302" class="dis_none">Y</span>
+							<span id="lnb_span_parent_menu_10302" class="dis_none">103</span>
+							<span id="lnb_span_ko_use_yn_10302" class="dis_none"></span>
+							<span id="lnb_span_en_use_yn_10302" class="dis_none"></span>
+							<span id="lnb_span_ch_use_yn_10302" class="dis_none"></span>
+						
+					
+				</li>
+			
+			
+		
+			
+			
+			
+			
+			
+		
+			
+			
+			
+			
+			
+					</ul>
+				</li>
+				
+			
+		
+			
+			
+				
+					
+					
+						<li>
+							<a href="#this">투자이민</a>
+							<ul class="m_2dep">
+					
+				
+			
+			
+			
+			
+		
+			
+			
+			
+				
+				<li>
+					
+						
+						
+						
+							<a href="#this" id="lnb_a_menu_10401">공익사업 투자이민제</a>
+							<span id="lnb_span_permission_10401" class="dis_none">Y</span>
+							<span id="lnb_span_parent_menu_10401" class="dis_none">104</span>
+							<span id="lnb_span_ko_use_yn_10401" class="dis_none"></span>
+							<span id="lnb_span_en_use_yn_10401" class="dis_none"></span>
+							<span id="lnb_span_ch_use_yn_10401" class="dis_none"></span>
+						
+					
+				</li>
+			
+			
+		
+			
+			
+			
+				
+				<li>
+					
+						
+						
+						
+							<a href="#this" id="lnb_a_menu_10402">기타 투자이민 상품</a>
+							<span id="lnb_span_permission_10402" class="dis_none">Y</span>
+							<span id="lnb_span_parent_menu_10402" class="dis_none">104</span>
+							<span id="lnb_span_ko_use_yn_10402" class="dis_none"></span>
+							<span id="lnb_span_en_use_yn_10402" class="dis_none"></span>
+							<span id="lnb_span_ch_use_yn_10402" class="dis_none"></span>
+						
+					
+				</li>
+			
+			
+		
+			
+			
+			
+				
+				<li>
+					
+						
+						
+						
+							<a href="#this" id="lnb_a_menu_10403">글로벌인재비자센터</a>
+							<span id="lnb_span_permission_10403" class="dis_none">Y</span>
+							<span id="lnb_span_parent_menu_10403" class="dis_none">104</span>
+							<span id="lnb_span_ko_use_yn_10403" class="dis_none"></span>
+							<span id="lnb_span_en_use_yn_10403" class="dis_none"></span>
+							<span id="lnb_span_ch_use_yn_10403" class="dis_none"></span>
+						
+					
+				</li>
+			
+			
+		
+			
+			
+			
+				
+				<li>
+					
+						
+						
+						
+							<a href="#this" id="lnb_a_menu_10404">전담은행</a>
+							<span id="lnb_span_permission_10404" class="dis_none">Y</span>
+							<span id="lnb_span_parent_menu_10404" class="dis_none">104</span>
+							<span id="lnb_span_ko_use_yn_10404" class="dis_none"></span>
+							<span id="lnb_span_en_use_yn_10404" class="dis_none"></span>
+							<span id="lnb_span_ch_use_yn_10404" class="dis_none"></span>
+						
+					
+				</li>
+			
+			
+		
+			
+			
+			
+				
+				<li>
+					
+						
+						
+						
+							<a href="#this" id="lnb_a_menu_10406">공지사항</a>
+							<span id="lnb_span_permission_10406" class="dis_none">Y</span>
+							<span id="lnb_span_parent_menu_10406" class="dis_none">104</span>
+							<span id="lnb_span_ko_use_yn_10406" class="dis_none"></span>
+							<span id="lnb_span_en_use_yn_10406" class="dis_none"></span>
+							<span id="lnb_span_ch_use_yn_10406" class="dis_none"></span>
+						
+					
+				</li>
+			
+			
+		
+			
+			
+			
+				
+				<li>
+					
+						
+						
+						
+							<a href="#this" id="lnb_a_menu_10407">자주묻는질문</a>
+							<span id="lnb_span_permission_10407" class="dis_none">Y</span>
+							<span id="lnb_span_parent_menu_10407" class="dis_none">104</span>
+							<span id="lnb_span_ko_use_yn_10407" class="dis_none"></span>
+							<span id="lnb_span_en_use_yn_10407" class="dis_none"></span>
+							<span id="lnb_span_ch_use_yn_10407" class="dis_none"></span>
+						
+					
+				</li>
+			
+			
+					</ul>
+				</li>
+				
+			
+		
+			
+			
+				
+					
+					
+						<li>
+							<a href="#this">고객센터</a>
+							<ul class="m_2dep">
+					
+				
+			
+			
+			
+			
+		
+			
+			
+			
+				
+				<li>
+					
+						
+						
+						
+							<a href="#this" id="lnb_a_menu_10501">공지사항</a>
+							<span id="lnb_span_permission_10501" class="dis_none">Y</span>
+							<span id="lnb_span_parent_menu_10501" class="dis_none">105</span>
+							<span id="lnb_span_ko_use_yn_10501" class="dis_none"></span>
+							<span id="lnb_span_en_use_yn_10501" class="dis_none"></span>
+							<span id="lnb_span_ch_use_yn_10501" class="dis_none"></span>
+						
+					
+				</li>
+			
+			
+		
+			
+			
+			
+				
+				<li>
+					
+						
+						
+						
+							<a href="#this" id="lnb_a_menu_10502">자주묻는질문</a>
+							<span id="lnb_span_permission_10502" class="dis_none">Y</span>
+							<span id="lnb_span_parent_menu_10502" class="dis_none">105</span>
+							<span id="lnb_span_ko_use_yn_10502" class="dis_none"></span>
+							<span id="lnb_span_en_use_yn_10502" class="dis_none"></span>
+							<span id="lnb_span_ch_use_yn_10502" class="dis_none"></span>
+						
+					
+				</li>
+			
+			
+		
+			
+			
+			
+				
+				<li>
+					
+						
+						
+						
+							<a href="#this" id="lnb_a_menu_10503">자료실</a>
+							<span id="lnb_span_permission_10503" class="dis_none">Y</span>
+							<span id="lnb_span_parent_menu_10503" class="dis_none">105</span>
+							<span id="lnb_span_ko_use_yn_10503" class="dis_none"></span>
+							<span id="lnb_span_en_use_yn_10503" class="dis_none"></span>
+							<span id="lnb_span_ch_use_yn_10503" class="dis_none"></span>
+						
+					
+				</li>
+			
+			
+		
+			
+			
+			
+				
+				<li>
+					
+						
+						
+						
+							<a href="#this" id="lnb_a_menu_10504">사이트이용방법</a>
+							<span id="lnb_span_permission_10504" class="dis_none">Y</span>
+							<span id="lnb_span_parent_menu_10504" class="dis_none">105</span>
+							<span id="lnb_span_ko_use_yn_10504" class="dis_none"></span>
+							<span id="lnb_span_en_use_yn_10504" class="dis_none"></span>
+							<span id="lnb_span_ch_use_yn_10504" class="dis_none"></span>
+						
+					
+				</li>
+			
+			
+		
+			
+			
+			
+				
+				<li>
+					
+						
+						
+						
+							<a href="#this" id="lnb_a_menu_10509">설문조사</a>
+							<span id="lnb_span_permission_10509" class="dis_none">Y</span>
+							<span id="lnb_span_parent_menu_10509" class="dis_none">105</span>
+							<span id="lnb_span_ko_use_yn_10509" class="dis_none"></span>
+							<span id="lnb_span_en_use_yn_10509" class="dis_none"></span>
+							<span id="lnb_span_ch_use_yn_10509" class="dis_none"></span>
+						
+					
+				</li>
+			
+			
+					</ul>
+				</li>
+				
+			
+		
+			
+			
+			
+				<li class="dis_none">
+					<a href="#this">고용추천</a>
+					<ul class="m_2dep">
+						<li class="dis_none">&nbsp;</li>
+			
+			
+			
+		
+			
+			
+			
+			
+			
+		
+			
+			
+			
+			
+			
+					</ul>
+				</li>
+				
+			
+		
+			
+			
+				
+					
+					
+						<li>
+							<a href="#this">비자신청센터</a>
+							<ul class="m_2dep">
+					
+				
+			
+			
+			
+			
+		
+			
+			
+			
+				
+				<li>
+					
+						
+						
+						
+							<a href="#this" id="lnb_a_menu_11200">비자신청센터</a>
+							<span id="lnb_span_permission_11200" class="dis_none">Y</span>
+							<span id="lnb_span_parent_menu_11200" class="dis_none">112</span>
+							<span id="lnb_span_ko_use_yn_11200" class="dis_none"></span>
+							<span id="lnb_span_en_use_yn_11200" class="dis_none"></span>
+							<span id="lnb_span_ch_use_yn_11200" class="dis_none"></span>
+						
+					
+				</li>
+			
+			
+		
+			
+			
+			
+				
+				<li>
+					
+						
+						
+						
+							<a href="#this" id="lnb_a_menu_11201">중국</a>
+							<span id="lnb_span_permission_11201" class="dis_none">Y</span>
+							<span id="lnb_span_parent_menu_11201" class="dis_none">112</span>
+							<span id="lnb_span_ko_use_yn_11201" class="dis_none"></span>
+							<span id="lnb_span_en_use_yn_11201" class="dis_none"></span>
+							<span id="lnb_span_ch_use_yn_11201" class="dis_none"></span>
+						
+					
+				</li>
+			
+			
+		
+			
+			
+			
+				
+				<li>
+					
+						
+						
+						
+							<a href="#this" id="lnb_a_menu_11202">베트남</a>
+							<span id="lnb_span_permission_11202" class="dis_none">Y</span>
+							<span id="lnb_span_parent_menu_11202" class="dis_none">112</span>
+							<span id="lnb_span_ko_use_yn_11202" class="dis_none"></span>
+							<span id="lnb_span_en_use_yn_11202" class="dis_none"></span>
+							<span id="lnb_span_ch_use_yn_11202" class="dis_none"></span>
+						
+					
+				</li>
+			
+			
+		
+			
+			
+			
+				
+				<li>
+					
+						
+						
+						
+							<a href="#this" id="lnb_a_menu_11203">인도네시아</a>
+							<span id="lnb_span_permission_11203" class="dis_none">Y</span>
+							<span id="lnb_span_parent_menu_11203" class="dis_none">112</span>
+							<span id="lnb_span_ko_use_yn_11203" class="dis_none"></span>
+							<span id="lnb_span_en_use_yn_11203" class="dis_none"></span>
+							<span id="lnb_span_ch_use_yn_11203" class="dis_none"></span>
+						
+					
+				</li>
+			
+			
+		
+			
+			
+			
+				
+				<li>
+					
+						
+						
+						
+							<a href="#this" id="lnb_a_menu_11204">몽골</a>
+							<span id="lnb_span_permission_11204" class="dis_none">Y</span>
+							<span id="lnb_span_parent_menu_11204" class="dis_none">112</span>
+							<span id="lnb_span_ko_use_yn_11204" class="dis_none"></span>
+							<span id="lnb_span_en_use_yn_11204" class="dis_none"></span>
+							<span id="lnb_span_ch_use_yn_11204" class="dis_none"></span>
+						
+					
+				</li>
+			
+			
+		
+			
+			
+			
+				
+				<li>
+					
+						
+						
+						
+							<a href="#this" id="lnb_a_menu_11205">독일</a>
+							<span id="lnb_span_permission_11205" class="dis_none">Y</span>
+							<span id="lnb_span_parent_menu_11205" class="dis_none">112</span>
+							<span id="lnb_span_ko_use_yn_11205" class="dis_none"></span>
+							<span id="lnb_span_en_use_yn_11205" class="dis_none"></span>
+							<span id="lnb_span_ch_use_yn_11205" class="dis_none"></span>
+						
+					
+				</li>
+			
+			
+		
+			
+			
+			
+				
+				<li>
+					
+						
+						
+						
+							<a href="#this" id="lnb_a_menu_11206">프랑스</a>
+							<span id="lnb_span_permission_11206" class="dis_none">Y</span>
+							<span id="lnb_span_parent_menu_11206" class="dis_none">112</span>
+							<span id="lnb_span_ko_use_yn_11206" class="dis_none"></span>
+							<span id="lnb_span_en_use_yn_11206" class="dis_none"></span>
+							<span id="lnb_span_ch_use_yn_11206" class="dis_none"></span>
+						
+					
+				</li>
+			
+			
+		
+			
+			
+			
+				
+				<li>
+					
+						
+						
+						
+							<a href="#this" id="lnb_a_menu_11207">영국</a>
+							<span id="lnb_span_permission_11207" class="dis_none">Y</span>
+							<span id="lnb_span_parent_menu_11207" class="dis_none">112</span>
+							<span id="lnb_span_ko_use_yn_11207" class="dis_none"></span>
+							<span id="lnb_span_en_use_yn_11207" class="dis_none"></span>
+							<span id="lnb_span_ch_use_yn_11207" class="dis_none"></span>
+						
+					
+				</li>
+			
+			
+					</ul>
+				</li>
+				
+			
+		
+	</ul>
+	<!-- // gnb -->
+	
+	<!-- 메인비주얼 영역 -->
+	<div id="m_visual"></div>
+	<!-- // 메인비주얼 영역 -->				
+</div>
+
+<!-- // main_header -->		
+
+		</div>
+		<!-- // main_header -->		
+
+		<!-- main_container -->
+		<div id="main_container">
+			
+
+
+
+
+
+<script type="text/javascript">
+	//<![CDATA[
+	           
+	var moreInfoGb = "N";          
+	           
+	$(document).ready(function() {
+
+		$("#visaVavigator").on("click", function() {//비자네비게이터 링크
+			var menuSubmit = new ComSubmit();
+			menuSubmit.menuTran("10101");
+		});
+		$("#evisaApply").on("click", function() {//전자비자신청링크
+			var menuSubmit = new ComSubmit();
+			menuSubmit.menuTran("10201");
+		});
+		$("#cccviApply").on("click", function() {//비자발급인정서신청링크
+			var menuSubmit = new ComSubmit();
+			menuSubmit.menuTran("10205");
+		});
+		$("#visitPreApply").on("click", function() {//방문취업사전신청링크
+			var menuSubmit = new ComSubmit();
+			menuSubmit.menuTran("10207");
+		});
+		$("#applyStateSearch").on("click", function() {//진행현황조회링크
+			var menuSubmit = new ComSubmit();
+			menuSubmit.menuTran("10301");
+		});
+		$("#prizeWinnerSearch").on("click", function() {//방문취업당첨자조회링크
+			var menuSubmit = new ComSubmit();
+			menuSubmit.menuTran("10302");
+		});
+		$("#onlinApply").on("click", function() {//온아인신청링크
+			var menuSubmit = new ComSubmit();
+			menuSubmit.menuTran("10204");
+		});
+		$("#publicInvestImm").on("click", function() {//공익사업투자이민링크
+			var menuSubmit = new ComSubmit();
+			menuSubmit.menuTran("10401");
+		});
+		$("#moreInfoNotice").on("click", function() {//공지사항 더보기 버튼 클릭시 
+			var menuSubmit = new ComSubmit();
+			menuSubmit.menuTran("10501");
+		});
+		$("#moreInfoFaq").on("click", function() {//공지사항 더보기 버튼 클릭시 
+			var menuSubmit = new ComSubmit();
+			menuSubmit.menuTran("10502");
+		});
+		$("#vw_search").on("click", function() { //나아게 맞는 비자찾아보기 버튼 클릭
+			if(fn_isValidParams()==true){
+				fn_navigatorSearch();
+			}
+		});
+		$("a[name='target']").on("click", function(e) {//체류자격 클릭시
+			e.preventDefault();
+			var sojQualGrp = $(this).find("input[name='SOJ_QUAL_GRP']").val();
+		
+			fn_sojQualSearch(sojQualGrp);
+		});
+		$("a[name='entryPurpose']").on("click", function(e) {//입국목적 클릭시
+			e.preventDefault();
+			if ($(this).parent().find("ul").css('display') == "none") {
+				$(this).parent().find("ul").css('display', "block");
+				$(this).parent('.guide_box').addClass('on');
+				$(this).attr('title', '상세내용 닫기');
+			} else if ($(this).parent().find("ul").css('display') == "block") {
+				$(this).parent().find("ul").css('display', "none");
+				$(this).parent('.guide_box').removeClass('on');
+				$(this).attr('title', '상세내용 보기');
+			}
+		});
+		
+		$("a[name='NOTICE_TITLE']").on("click", function(e){ //공지사항 제목
+			e.preventDefault();
+			fn_openNoticeInfo($(this));
+		});
+		
+		$("a[name='FAQ_TITLE']").on("click", function(e){ //FAQ 제목
+			e.preventDefault();
+			fn_openFAQInfo($(this));
+		});
+		
+		$(".notice_ac").on("click", function(){ //공지사항 또는 자주묻는 질문 클릭
+			var i = $('.notice_ac').index(this);
+			$('.notice_ac').removeClass('on');
+			$(this).addClass('on');
+			$('.notice_view').removeClass('on').eq(i).addClass('on');
+		});
+
+		/* 메인화면 팝업 */
+		
+		
+		
+		
+		
+		
+	});
+	
+	
+	function getCookie(name){
+		var cookieName = name + "=";
+		var i=0;
+		var cookieEnd;
+		while(i <= document.cookie.length){
+			var j = (i + cookieName.length);
+			if(document.cookie.substring(i,j) == cookieName){
+				if((cookieEnd = document.cookie.indexOf(";", j)) == -1){
+					cookieEnd = document.cookie.length;
+				}
+				return unescape(document.cookie.substring(j, cookieEnd));
+			}
+			i = document.cookie.indexOf(" ", i) + 1;
+			if(i == 0){
+				break;
+			}
+		}
+		return "";
+	}
+	
+	
+	function fn_setNatCombo() {
+		var openAjax = new ComAjax();
+		openAjax.setUrl("/main/selectNatList.do");
+		openAjax.setCallBack("fn_natComboCallback");
+		openAjax.addParam("IN_CONT_CD", $('#IN_CONT_CD').val());
+		openAjax.tran();
+
+	}
+	
+	
+	function fn_natComboCallback(data) {
+		$("#IN_NAT_CD option").remove();
+		var result = "<option value=''>선택</option>";
+		$.each(data, function(key, value) {
+			$.each(value, function(key, value) {
+
+				result += "<option value='"+value.NAT_CD+"'>"
+						+ value.NAT_ENG_NM + "</option>";
+			});
+		});
+
+		$("#IN_NAT_CD").append(result);
+	}
+
+	
+	function fn_navigatorSearch() {
+		var menuSubmit = new ComSubmit();
+		menuSubmit.addParam("IN_REP_ENTRY_PURP_CD", $('#IN_REP_ENTRY_PURP_CD').val());
+		menuSubmit.addParam("IN_NAT_CD", $('#IN_NAT_CD').val());
+		menuSubmit.addParam("IN_CONT_CD", $('#IN_CONT_CD').val());
+		menuSubmit.addParam("IN_SOJ_DUR", $('#IN_SOJ_DUR').val());
+		menuSubmit.addParam("MIAN_GB", "M");
+		menuSubmit.menuTran("10101");
+		//menuSubmit.tran();
+	}
+	
+	
+	function fn_isValidParams(){
+		var params = "IN_NAT_CD=MSG_NAVI_ASTERISK^PERSON_NATIONALITY|IN_REP_ENTRY_PURP_CD=MSG_NAVI_ASTERISK^PLAN_PURPOSE|IN_SOJ_DUR=MSG_NAVI_ASTERISK^SOJ_DUR";
+		return gfn_isValidParams(params);
+	}
+
+	
+	function fn_sojQualSearch(data) {
+		var searchSubmit = new ComSubmit();
+		searchSubmit.addParam("IN_SOJ_QUAL_GRP",data);
+		searchSubmit.menuTran("1010201");
+	}
+	
+	
+	function fn_openNoticeInfo(obj){
+		var comSubmit = new ComSubmit();
+		comSubmit.addParam("NOTICE_ID_DETAIL", obj.parent().find("input[name='NOTICE_ID']").val());
+		comSubmit.addParam("TARGET", "T");
+		comSubmit.menuTran("1050101");
+	}
+	
+	
+	function fn_openFAQInfo(obj){
+		var comSubmit = new ComSubmit();
+		comSubmit.addParam("FAQ_ID", obj.parent().find("input[name='FAQ_ID']").val());
+		comSubmit.addParam("TARGET", "T");
+		comSubmit.menuTran("1050201");
+	}
+	//]]>
+</script>
+
+<!-- main_container -->
+
+	<!-- 비자네비게이터 컨텐츠 -->
+	<div id="m_con01" class="main_con01 mgb_40 group">
+		<h2 class="hide">VISA NAVIGATOR</h2>
+		<a href="#this" id="visaVavigator" class="navi_link"> <img
+			src="images/common/visanavi_tit_KO.gif"
+			alt="VISA - 비자 내비게이터 NAVIGATOR" /> <span><!-- 어떤 비자을 신청해야 할지궁금하신가요? -->
+			<!-- <br /> -->비자 내비게이터로 간편하게 나에게<!-- 비자 내비게이터로 간편하게 나에게 -->
+			<br />딱 맞는 비자을 찾아보시기 바랍니다.<!-- 딱 맞는 비자을 찾아보시기 바랍니다. --><img class="btn_go" src="images/btn/btn_go_01.png" alt="바로가기_Go" />
+		</span>
+		</a>
+		<div class="visa_con">
+			
+			
+			<!-- 비자내비게이터 검색조건 -->
+			<div class="nav_search_box group">
+				<div class="nav_search fl_left"> 
+					<div class="mgb_20">
+						<label for="IN_CONT_CD" class="nav_search01">대륙<!-- 대륙 --></label>
+						<select id="IN_CONT_CD" name="IN_CONT_CD"  class="nav_search02 visa_sel" onchange="fn_setNatCombo()">
+							<option value="">전체<!-- 전체 --></option>
+							<option value="1">Asia</option>
+							<option value="2">Americas</option>
+							<option value="3">Europe</option>
+							<option value="4">Oceania</option>
+							<option value="5">Africa</option>
+							<option value="6">ETC</option>
+						</select>
+						<label for="IN_NAT_CD" class="nav_search03">국가/지역<!-- 국가/지역 --></label>
+						<select name="IN_NAT_CD" id="IN_NAT_CD" class="nav_search04 visa_sel">
+							<option value="">선택<!-- 선택 --></option>
+							
+								<option value="101">AFGHANISTAN</option>
+							
+								<option value="301">ALBANIA</option>
+							
+								<option value="502">ALGERIA</option>
+							
+								<option value="302">ANDORRA</option>
+							
+								<option value="503">ANGOLA</option>
+							
+								<option value="201">ANTIGUA-BARBUDA</option>
+							
+								<option value="202">ARGENTINA</option>
+							
+								<option value="304">ARMENIA</option>
+							
+								<option value="404">AUSTRALIA</option>
+							
+								<option value="303">AUSTRIA</option>
+							
+								<option value="305">AZERBAIJAN</option>
+							
+								<option value="205">BAHAMAS</option>
+							
+								<option value="104">BAHRAIN</option>
+							
+								<option value="105">BANGLADESH</option>
+							
+								<option value="206">BARBADOS</option>
+							
+								<option value="308">BELARUS</option>
+							
+								<option value="306">BELGIUM</option>
+							
+								<option value="207">BELIZE</option>
+							
+								<option value="520">BENIN</option>
+							
+								<option value="210">BERMUDA</option>
+							
+								<option value="106">BHUTAN</option>
+							
+								<option value="208">BOLIVIA</option>
+							
+								<option value="309">BOSNIA-HERCEGOVINA</option>
+							
+								<option value="506">BOTSWANA</option>
+							
+								<option value="209">BRAZIL</option>
+							
+								<option value="317">BRITISH DEPENDENT TERRITORIES CITIZEN</option>
+							
+								<option value="318">BRITISH NATIONAL OVERSEAS</option>
+							
+								<option value="319">BRITISH OVERSEAS CITIZEN</option>
+							
+								<option value="314">BRITISH PROTECTED PERSON</option>
+							
+								<option value="315">BRITISH SUBJECT</option>
+							
+								<option value="107">BRUNEI</option>
+							
+								<option value="307">BULGARIA</option>
+							
+								<option value="589">BURKINA FASO</option>
+							
+								<option value="507">BURUNDI</option>
+							
+								<option value="110">CAMBODIA</option>
+							
+								<option value="510">CAMEROON</option>
+							
+								<option value="213">CANADA</option>
+							
+								<option value="511">CANARY IS.</option>
+							
+								<option value="512">CAPE VERDE</option>
+							
+								<option value="513">CENTRAL AFRICA</option>
+							
+								<option value="514">CHAD</option>
+							
+								<option value="214">CHILE</option>
+							
+								<option value="112">CHINA P. R.</option>
+							
+								<option value="120">CHINA P. R.(HONG KONG)</option>
+							
+								<option value="142">CHINA P. R.(MACAO)</option>
+							
+								<option value="113">CHINA(TAIWAN)</option>
+							
+								<option value="215">COLOMBIA</option>
+							
+								<option value="515">COMOROS</option>
+							
+								<option value="517">CONGO D R</option>
+							
+								<option value="516">CONGO P. R.</option>
+							
+								<option value="412">COOK IS.</option>
+							
+								<option value="216">COSTA RICA</option>
+							
+								<option value="537">COTE D'IVOIRE</option>
+							
+								<option value="391">CROATIA</option>
+							
+								<option value="217">CUBA</option>
+							
+								<option value="114">CYPRUS</option>
+							
+								<option value="310">CZECH</option>
+							
+								<option value="313">DENMARK</option>
+							
+								<option value="521">DJIBOUTI</option>
+							
+								<option value="220">DOMINICA</option>
+							
+								<option value="221">DOMINICAN REP.</option>
+							
+								<option value="156">EAST-TIMOR</option>
+							
+								<option value="224">ECUADOR</option>
+							
+								<option value="525">EGYPT</option>
+							
+								<option value="225">EL SALVADOR</option>
+							
+								<option value="526">EQUATOR-GUINEA</option>
+							
+								<option value="528">ERITREA</option>
+							
+								<option value="312">ESTONIA</option>
+							
+								<option value="579">ESWATINI</option>
+							
+								<option value="527">ETHIOPIA</option>
+							
+								<option value="418">FIJI</option>
+							
+								<option value="320">FINLAND</option>
+							
+								<option value="321">FRANCE</option>
+							
+								<option value="530">GABON</option>
+							
+								<option value="531">GAMBIA</option>
+							
+								<option value="323">GEORGIA</option>
+							
+								<option value="324">GERMANY F.R</option>
+							
+								<option value="532">GHANA</option>
+							
+								<option value="326">GREECE</option>
+							
+								<option value="328">GREENLAND</option>
+							
+								<option value="229">GRENADA</option>
+							
+								<option value="423">GUAM</option>
+							
+								<option value="231">GUATEMALA</option>
+							
+								<option value="533">GUINEA</option>
+							
+								<option value="534">GUINEA BISSAU</option>
+							
+								<option value="232">GUYANA</option>
+							
+								<option value="235">HAITI</option>
+							
+								<option value="390">HOLY SEE</option>
+							
+								<option value="236">HONDURAS</option>
+							
+								<option value="121">HONG KONG D.I.</option>
+							
+								<option value="329">HUNGARY</option>
+							
+								<option value="333">ICELAND</option>
+							
+								<option value="124">INDIA</option>
+							
+								<option value="125">INDONESIA</option>
+							
+								<option value="126">IRAN</option>
+							
+								<option value="127">IRAQ</option>
+							
+								<option value="334">IRELAND</option>
+							
+								<option value="128">ISRAEL</option>
+							
+								<option value="335">ITALY</option>
+							
+								<option value="240">JAMAICA</option>
+							
+								<option value="130">JAPAN</option>
+							
+								<option value="131">JORDAN</option>
+							
+								<option value="133">KAZAKHSTAN</option>
+							
+								<option value="540">KENYA</option>
+							
+								<option value="429">KIRIBATI</option>
+							
+								<option value="135">KUWAIT</option>
+							
+								<option value="134">KYRGYZ REPUBLIC</option>
+							
+								<option value="138">LAOS</option>
+							
+								<option value="339">LATVIA</option>
+							
+								<option value="139">LEBANON</option>
+							
+								<option value="542">LESOTHO</option>
+							
+								<option value="543">LIBERIA</option>
+							
+								<option value="544">LIBYA</option>
+							
+								<option value="340">LIECHTENSTEIN</option>
+							
+								<option value="342">LITHUANIA</option>
+							
+								<option value="341">LUXEMBOURG</option>
+							
+								<option value="343">MACEDONIA</option>
+							
+								<option value="550">MADAGASCAR</option>
+							
+								<option value="551">MALAWI</option>
+							
+								<option value="143">MALAYSIA</option>
+							
+								<option value="144">MALDIVES</option>
+							
+								<option value="552">MALI</option>
+							
+								<option value="344">MALTA</option>
+							
+								<option value="437">MARSHALL ISLANDS</option>
+							
+								<option value="553">MAURITANIA</option>
+							
+								<option value="554">MAURITIUS</option>
+							
+								<option value="248">MEXICO</option>
+							
+								<option value="435">MICRONESIA</option>
+							
+								<option value="346">MOLDOVA</option>
+							
+								<option value="345">MONACO</option>
+							
+								<option value="145">MONGOLIA</option>
+							
+								<option value="347">MONTENEGRO</option>
+							
+								<option value="555">MOROCCO</option>
+							
+								<option value="556">MOZAMBIQUE</option>
+							
+								<option value="108">MYANMAR</option>
+							
+								<option value="560">NAMIBIA</option>
+							
+								<option value="441">NAURU</option>
+							
+								<option value="148">NEPAL</option>
+							
+								<option value="350">NETHERLANDS</option>
+							
+								<option value="443">NEW CALEDONIA</option>
+							
+								<option value="446">NEW ZEALAND</option>
+							
+								<option value="252">NICARAGUA</option>
+							
+								<option value="561">NIGER</option>
+							
+								<option value="562">NIGERIA</option>
+							
+								<option value="447">NIUE</option>
+							
+								<option value="352">NORWAY</option>
+							
+								<option value="150">OMAN</option>
+							
+								<option value="153">PAKISTAN</option>
+							
+								<option value="451">PALAU</option>
+							
+								<option value="154">PALESTINE</option>
+							
+								<option value="255">PANAMA</option>
+							
+								<option value="452">PAPUA NEW GUINEA</option>
+							
+								<option value="256">PARAGUAY</option>
+							
+								<option value="257">PERU</option>
+							
+								<option value="155">PHILIPPINES</option>
+							
+								<option value="360">POLAND</option>
+							
+								<option value="361">PORTUGAL</option>
+							
+								<option value="258">PUERTO RICO</option>
+							
+								<option value="159">QATAR</option>
+							
+								<option value="337">REPUBLIC OF KOSOVO</option>
+							
+								<option value="367">REPUBLIC OF SERBIA</option>
+							
+								<option value="580">REPUBLIC OF SOUTH SUDAN</option>
+							
+								<option value="365">ROMANIA</option>
+							
+								<option value="366">RUSSIA</option>
+							
+								<option value="566">RWANDA</option>
+							
+								<option value="461">SAMOA</option>
+							
+								<option value="371">SAN MARINO</option>
+							
+								<option value="571">SAOTOME-PRINCIPE</option>
+							
+								<option value="162">SAUDI ARABIA</option>
+							
+								<option value="572">SENEGAL</option>
+							
+								<option value="573">SEYCHELLES</option>
+							
+								<option value="574">SIERRA LEONE</option>
+							
+								<option value="164">SINGAPORE</option>
+							
+								<option value="368">SLOVAK</option>
+							
+								<option value="370">SLOVENIA</option>
+							
+								<option value="463">SOLOMON IS.</option>
+							
+								<option value="575">SOMALIA</option>
+							
+								<option value="576">SOUTH AFRICA</option>
+							
+								<option value="372">SPAIN</option>
+							
+								<option value="111">SRI LANKA</option>
+							
+								<option value="262">ST. KITTS-NEVIS</option>
+							
+								<option value="263">ST. LUCIA</option>
+							
+								<option value="264">ST. VINCENT</option>
+							
+								<option value="578">SUDAN</option>
+							
+								<option value="265">SURINAM</option>
+							
+								<option value="375">SVALBARD AND JAN MAYEN I.</option>
+							
+								<option value="373">SWEDEN</option>
+							
+								<option value="374">SWITZERLAND</option>
+							
+								<option value="165">SYRIA</option>
+							
+								<option value="169">TAJIKISTAN</option>
+							
+								<option value="583">TANZANIA</option>
+							
+								<option value="170">THAILAND</option>
+							
+								<option value="584">TOGO</option>
+							
+								<option value="473">TONGA</option>
+							
+								<option value="268">TRINIDAD-TOBAGO</option>
+							
+								<option value="585">TUNISIA</option>
+							
+								<option value="171">TURKIYE</option>
+							
+								<option value="172">TURKMENISTAN</option>
+							
+								<option value="475">TUVALU</option>
+							
+								<option value="180">U.A.E</option>
+							
+								<option value="588">UGANDA</option>
+							
+								<option value="378">UKRAINE</option>
+							
+								<option value="316">UNITED KINGDOM</option>
+							
+								<option value="275">UNITED STATES</option>
+							
+								<option value="274">URUGUAY</option>
+							
+								<option value="181">UZBEKISTAN</option>
+							
+								<option value="485">VANUATU</option>
+							
+								<option value="280">VENEZUELA</option>
+							
+								<option value="185">VIETNAM</option>
+							
+								<option value="191">YEMEN</option>
+							
+								<option value="595">ZAMBIA</option>
+							
+								<option value="565">ZIMBABWE</option>
+							
+						</select> 
+					</div>
+					<div>
+						<label for="IN_REP_ENTRY_PURP_CD" class="nav_search05">입국목적<!--입국목적--></label>
+						<select id="IN_REP_ENTRY_PURP_CD" name="IN_REP_ENTRY_PURP_CD" class="nav_search06 visa_sel"  >
+<option value=""  >선택</option>
+<option value="VC001"  >관광 등 단기방문</option>
+<option value="VC002"  >치료요양</option>
+<option value="VC003"  >유학/어학연수</option>
+<option value="VC004"  >전문직 취업</option>
+<option value="VC005"  >주재</option>
+<option value="VC006"  >취재/종교</option>
+<option value="VC007"  >투자</option>
+<option value="VC008"  >무역경영</option>
+<option value="VC009"  >재외동포</option>
+<option value="VC010"  >방문취업</option>
+<option value="VC011"  >가족방문/동거</option>
+<option value="VC012"  >결혼이민</option>
+<option value="VC013"  >연수</option>
+<option value="VC014"  >비전문직 취업</option>
+<option value="VC015"  >외교, 공무</option>
+</select>
+
+						<label for="IN_SOJ_DUR" class="nav_search07">체류기간<!-- 체류기간 --></label>
+						<select id="IN_SOJ_DUR" name="IN_SOJ_DUR" class="nav_search08 visa_sel"  >
+<option value=""  >선택</option>
+<option value="90UNDER"  >90일이하</option>
+<option value="91OVER"  >91일이상</option>
+<option value="FOREVER"  >영주</option>
+</select>
+
+					</div>
+				</div>
+				<div class="fl_left">
+					<input type="image" id="vw_search" class="btn_v_start nav_search09" src="images/btn/btn_vw_start.gif" alt="Visa Navigator START" />
+				</div>
+			</div>				
+			<!-- // 비자내비게이터 검색조건 -->
+			
+		</div>
+		
+	</div>
+	<!-- // 비자네비게이터 컨텐츠 -->
+
+	<!-- 바로가기 및 공지사항, 자주묻는 질문 컨텐츠 -->
+	<div id="m_con03" class="main_con03 group">
+		
+		<!-- 바로가기 서비스 -->
+		<div class="link_service group">
+			<h2 class="main_con_tit02">
+				바로가기 서비스<!-- 바로가기 서비스 -->
+			</h2>
+			<ul class="link_s_01">
+				<li><span>&middot;</span><a href="#this" id="evisaApply">전자비자 신청<!-- 전자비자신청 --></a></li>
+				<li><span>&middot;</span><a href="#this" id="onlinApply">전자서식(비자신청서)<!-- 전자서식사전제출 --></a></li>
+				<li><span>&middot;</span><a href="#this" id="cccviApply">비자발급인정서 신청<!-- 비자발급인정서신청 --></a></li>
+			</ul>
+			<ul class="link_s_02">
+				<li><span>&middot;</span><a href="#this" id="visitPreApply">방문취업 사전신청<!-- 방문취업  사전신청--></a></li>
+				<li><span>&middot;</span><a href="#this" id="applyStateSearch">진행현황조회<!-- 진행현황조회 --></a></li>
+				<li><span>&middot;</span><a href="#this" id="prizeWinnerSearch">방문취업당첨확인<!-- 방문취업당첨자조회 --></a></li>
+			</ul>
+		</div>
+		<!-- // 바로가기 서비스 -->
+		<!-- 공지사항 및 자주묻는 질문 -->
+		<div class="notice">
+			
+			
+			
+			<div class="notice_tab group">
+				<div class="notice_ac on group">
+					<h2 id="noticeClass">
+						<a href="#this" id="notice" class="tab_tit"><span>공지사항<!-- 공지사항 --></span></a>
+						<span class="tab_bar">&nbsp;</span>
+					</h2>
+				</div>
+			
+				<!-- 공지사항 탭 내용 -->
+				<div class="notice_view on">
+					<ul>
+						
+							
+								<li>
+									<a href="#this" name="NOTICE_TITLE">단기비자 및 전자비자 발급 재개 안내</a><span class="date">2022-05-20</span>
+									<input type="hidden" name="NOTICE_ID" value="111"/>
+								</li>
+							
+								<li>
+									<a href="#this" name="NOTICE_TITLE">비자면제협정 및 무비자입국 잠정 정지 조치 관련 알림(2022.4.1. 시행)</a><span class="date">2022-04-11</span>
+									<input type="hidden" name="NOTICE_ID" value="110"/>
+								</li>
+							
+								<li>
+									<a href="#this" name="NOTICE_TITLE">코로나19로 중단된 재입국허가 면제 재시행(2022.4.1.)에 따른 재입국허가 관련 안내문</a><span class="date">2022-03-31</span>
+									<input type="hidden" name="NOTICE_ID" value="109"/>
+								</li>
+							
+						
+					</ul>
+					<a href="#this" id="moreInfoNotice" class="more_tab" title="공지사항">더보기<!-- 더보기 --></a>
+				</div>
+				<!-- // 공지사항 탭 내용 -->
+				
+				<div class="notice_ac group">
+					<h2 id="faqClass">
+						<a href="#this" id="faq" class="tab_tit"><span>자주묻는질문<!-- 자주묻는질문 --></span></a>
+					</h2>
+				</div>
+				
+				<!-- 자주묻는 질문 탭 내용 -->
+				<div class="notice_view">
+					<ul>
+						
+							
+								<li>
+									<a href="#this" name="FAQ_TITLE">공익사업투자이민제를 신청할 때 대행기관을 이용해야 하나요?</a><span class="date">2019-04-19</span>
+									<input type="hidden" name="FAQ_ID" value="61"/>
+								</li>
+							
+								<li>
+									<a href="#this" name="FAQ_TITLE">공익사업투자이민제 신청(사전심사)하려면 별도 수수료가 있나요?</a><span class="date">2019-04-19</span>
+									<input type="hidden" name="FAQ_ID" value="60"/>
+								</li>
+							
+								<li>
+									<a href="#this" name="FAQ_TITLE">조건부영주 (15억이상 공익사업투자이민)를 하게되면 성인 자녀에 대해서도 영주(F-5)자격을 받을 수 있나요?</a><span class="date">2019-03-25</span>
+									<input type="hidden" name="FAQ_ID" value="59"/>
+								</li>
+							
+						
+					</ul>
+					<a href="#this" id="moreInfoFaq" class="more_tab" title="자주묻는질문">더보기<!-- 더보기 --></a>
+				</div>
+				<!-- 자주묻는 질문 탭 내용 -->
+				
+			</div>
+			
+			
+			
+		</div>
+		<!-- // 공지사항 및 자주묻는 질문 -->
+
+		<!-- 공익사업 투자이민 및 고객센터 -->
+		<div class="immigration">
+			<h2 class="imm_link">
+				<span>공익사업 투자이민<!-- 투자이민 --></span>
+			</h2>
+			<a href="#this" id="publicInvestImm" class="imm_link">
+				<img class="btn_go"
+				src="images/common/main_img01_KO.gif"
+				alt="대한민국에 투자하세요 ! - 대한민국 법무부가 지정하는 공공펀드 또는 개발사업에 투자하면 영주권을 받을 수 있습니다." />
+			</a>
+		</div>
+		<!-- // 공익사업 투자이민 및 고객센터 -->
+
+	</div>
+	<!-- // 바로가기 및 공지사항, 자주묻는 질문 컨텐츠 -->
+
+	<!-- 입국목적별 비자안내 컨텐츠 -->
+	<div id="m_con02" class="main_con02">
+		
+		<h2 class="main_con_tit">
+			<!-- 비자안내 -->
+			<span>입국목적별</span>비자안내
+		</h2>
+
+		<div class="guide_wrap group">
+			<!-- 5단그리드 첫번째 영역 -->
+			<div class="guide_5 guide_5of1">
+				<div class="guide_box mgb_11">
+					<a href="#this" id="VC001" name="entryPurpose" class="guide_tit guide_tit01" title="상세내용 보기"><span>관광 등 단기방문<!-- 관광 등 단기방문 --></span></a>
+					<ul class="guide_2st">
+						<li><a href="#this" name="target">&middot; 비자면제 (B-1)<!-- 비자면제 (B-1) --><input type="hidden" name="SOJ_QUAL_GRP" value="B-1"/></a></li>
+								<li><a href="#this" name="target"><span class="main_dot">일반무비자 (B-2-1)<!-- 일반무비자 (B-2-1) --></span><input type="hidden" name="SOJ_QUAL_GRP" value="B-2-1"/></a></li>
+								<li><a href="#this" name="target"><span class="main_dot">제주무비자(B-2-2)<!-- 제주무비자(B-2-2) --></span><input type="hidden" name="SOJ_QUAL_GRP" value="B-2-2"/></a></li>
+								<li><a href="#this" name="target"><span class="main_dot">단기일반(C-3-1)<!-- 단기일반(C-3-1) --></span><input type="hidden" name="SOJ_QUAL_GRP" value="C-3-1"/></a></li>
+								<li><a href="#this" name="target"><span class="main_dot">단체관광등(C-3-2)<!-- 순수관광(C-3-2) --></span><input type="hidden" name="SOJ_QUAL_GRP" value="C-3-2"/></a></li>
+								<li><a href="#this" name="target"><span class="main_dot">일반상용(C-3-4)<!-- 단기상용(C-3-4) --></span><input type="hidden" name="SOJ_QUAL_GRP" value="C-3-4"/></a></li>
+								<li><a href="#this" name="target"><span class="main_dot">협정단기상용(C-3-5)<!-- 협정단기상용(C-3-5) --></span><input type="hidden" name="SOJ_QUAL_GRP" value="C-3-5"/></a></li>
+								<li><a href="#this" name="target"><span class="main_dot">단기상용(C-3-6)<!-- 단기상용(C-3-6)  --></span><input type="hidden" name="SOJ_QUAL_GRP" value="C-3-6"/></a></li>
+								<li><a href="#this" name="target"><span class="main_dot">동포방문(C-3-8)<!-- 동포방문(C-3-8)  --></span><input  type="hidden" name="SOJ_QUAL_GRP" value="C-3-8"/></a></li>
+								<li><a href="#this" name="target"><span class="main_dot">일반관광(C-3-9)<!-- 일반관광(C-3-9) --></span><input type="hidden" name="SOJ_QUAL_GRP" value="C-3-9"/></a></li>
+								<li><a href="#this" name="target"><span class="main_dot">관광취업(H-1)<!-- 관광취업(H-1) --></span><input type="hidden" name="SOJ_QUAL_GRP" value="H-1"/></a></li>
+					</ul>
+				</div>
+				<div class="guide_box mgb_11">
+					<a href="#this" id="VC006" name="entryPurpose" class="guide_tit guide_tit02" title="상세내용 보기"><span class="long_tit_guide">취재<!-- 취재  --> &middot; 종교<!-- 종교 --></span></a>
+					<ul class="guide_2st">
+						<li><a href="#this" name="target"><span class="main_dot">일시취재(C-1)<!-- 일시취재(C-1) --></span><input type="hidden" name="SOJ_QUAL_GRP" value="C-1"/></a></li>
+						<li><a href="#this" name="target"><span class="main_dot">취재(D-5)<!-- 취재(D-5) --></span><input type="hidden" name="SOJ_QUAL_GRP" value="D-5"/></a></li>
+						<li><a href="#this" name="target"><span class="main_dot">종교(D-6)<!-- 종교(D-6) --></span><input type="hidden" name="SOJ_QUAL_GRP" value="D-6"/></a></li>
+					</ul>
+				</div>
+				<div class="guide_box">
+					<a href="#this" id="VC011" name="entryPurpose"  class="guide_tit guide_tit03" title="상세내용 보기"><span class="long_tit_guide">가족방문<!-- 가족방문 --> &middot; 동거<!-- 동거 --></span></a>
+					<ul class="guide_2st">
+						<li><a href="#this" name="target"><span class="main_dot">외교동거(F-1-3)<!-- 외교동거(F-1-3) --></span><input type="hidden" name="SOJ_QUAL_GRP" value="F-1-3"/></a></li>   
+						<li><a href="#this" name="target"><span class="main_dot">동포배우자등(F-1-9)<!-- 동포배우자등(F-1-9) --></span><input type="hidden" name="SOJ_QUAL_GRP" value="F-1-9"/></a></li>
+						<li><a href="#this" name="target"><span class="main_dot">유학생부모(F-1-13)<!-- 유학생부모(F-1-13) --></span><input type="hidden" name="SOJ_QUAL_GRP" value="F-1-13"/></a></li>															
+						<li><a href="#this" name="target"><span class="main_dot">국민자녀(F-2-2)<!-- 국민자녀(F-2-2) --></span><input type="hidden" name="SOJ_QUAL_GRP" value="F-2-2"/></a></li>    
+						<li><a href="#this" name="target"><span class="main_dot">영주자가족(F-2-3)<!-- 영주자가족(F-2-3) --></span><input type="hidden" name="SOJ_QUAL_GRP" value="F-2-3"/></a></li>  
+						<li><a href="#this" name="target"><span class="main_dot">동반(F-3-1)<!-- 동반(F-3-1) --></span><input type="hidden" name="SOJ_QUAL_GRP" value="F-3-1"/></a></li>        
+					</ul>
+				</div>
+			</div>
+			<!-- // 5단그리드 첫번째 영역 -->
+
+			<!-- 5단그리드 두번째 영역 -->
+			<div class="guide_5">
+				<div class="guide_box mgb_11">
+					<a href="#this" id="VC002" name="entryPurpose" class="guide_tit guide_tit04" title="상세내용 보기"><span>치료요양<!-- 치료요양 --></span></a>
+					<ul class="guide_2st">
+						<li><a href="#this" name="target"><span class="main_dot">의료관광(C-3-3)<!-- 의료관광(C-3-3) --></span><input type="hidden" name="SOJ_QUAL_GRP" value="C-3-3"/></a></li>
+						<li><a href="#this" name="target"><span class="main_dot">치료요양(G-1-10)<!-- 치료요양(G-1-10) --></span><input type="hidden" name="SOJ_QUAL_GRP" value="G-1-10"/></a></li>
+					</ul>
+				</div>
+				<div class="guide_box mgb_11">
+					<a href="#this" id="VC007" name="entryPurpose"  class="guide_tit guide_tit05" title="상세내용 보기"><span>투자<!-- 투자 --></span></a>
+					<ul class="guide_2st">
+						<li><a href="#this" name="target"><span class="main_dot">법인에 투자(D-8-1)<!-- 투자기업(D-8-1) --></span><input type="hidden" name="SOJ_QUAL_GRP" value="D-8-1"/></a></li> 
+						<li><a href="#this" name="target"><span class="main_dot">벤처기업(D-8-2)<!-- 벤처기업(D-8-2) --></span><input type="hidden" name="SOJ_QUAL_GRP" value="D-8-2"/></a></li>     
+						<li><a href="#this" name="target"><span class="main_dot">개인기업투자(D-8-3)<!-- 국민기업개인(D-8-3) --></span><input type="hidden" name="SOJ_QUAL_GRP" value="D-8-3"/></a></li>
+						<li><a href="#this" name="target"><span class="main_dot">기술창업(D-8-4)<!-- 기술창업(D-8-4) --></span><input type="hidden" name="SOJ_QUAL_GRP" value="D-8-4"/></a></li>
+						<li><a href="#this" name="target"><span class="main_dot">FTA전근(D-8-91)<!-- FTA전근(D-8-91) --></span><input type="hidden" name="SOJ_QUAL_GRP" value="D-8-91"/></a></li>
+						<li><a href="#this" name="target"><span class="main_dot">고액투자(F-5-5)<!-- 고액투자(F-5-5) --></span><input type="hidden" name="SOJ_QUAL_GRP" value="F-5-5"/></a></li>
+					</ul>
+				</div>
+				<div class="guide_box">
+					<a href="#this" id="VC012" name="entryPurpose" class="guide_tit guide_tit06" title="상세내용 보기"><span>결혼이민<!-- 결혼이민 --></span></a>
+					<ul class="guide_2st">
+						<li><a href="#this" name="target"><span class="main_dot">국민배우자(F-6-1)<!-- 국민배우자(F-6-1) --></span><input type="hidden" name="SOJ_QUAL_GRP" value="F-6-1"/></a></li>
+						<li><a href="#this" name="target"><span class="main_dot">자녀양육(F-6-2)<!-- 자녀양육(F-6-2) --></span><input type="hidden" name="SOJ_QUAL_GRP" value="F-6-2"/></a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- // 5단그리드 두번째 영역 -->
+
+			<!-- 5단그리드 세번째 영역 -->
+			<div class="guide_5">
+				<div class="guide_box mgb_11">
+					<a href="#this" id="VC003" name="entryPurpose"  class="guide_tit guide_tit07" title="상세내용 보기"><span class="long_tit_guide">유학<!-- 유학  --> &middot; 어학연수<!-- 어학연수 --></span></a>
+					<ul class="guide_2st">
+						<li><a href="#this" name="target"><span class="main_dot">전문학사(D-2-1)<!-- 전문학사(D-2-1) --></span><input type="hidden" name="SOJ_QUAL_GRP" value="D-2-1"/></a></li>
+						<li><a href="#this" name="target"><span class="main_dot">학사유학(D-2-2)<!-- 학사유학(D-2-2) --></span><input type="hidden" name="SOJ_QUAL_GRP" value="D-2-2"/></a></li>
+						<li><a href="#this" name="target"><span class="main_dot">석사유학(D-2-3)<!-- 석사유학(D-2-3) --></span><input type="hidden" name="SOJ_QUAL_GRP" value="D-2-3"/></a></li>
+						<li><a href="#this" name="target"><span class="main_dot">박사유학(D-2-4)<!-- 박사유학(D-2-4) --></span><input type="hidden" name="SOJ_QUAL_GRP" value="D-2-4"/></a></li>
+						<li><a href="#this" name="target"><span class="main_dot">연구유학(D-2-5)<!-- 연구유학(D-2-5) --></span><input type="hidden" name="SOJ_QUAL_GRP" value="D-2-5"/></a></li>
+						<li><a href="#this" name="target"><span class="main_dot">교환학생(D-2-6)<!-- 교환학생(D-2-6) --></span><input type="hidden" name="SOJ_QUAL_GRP" value="D-2-6"/></a></li>
+						<li><a href="#this" name="target"><span class="main_dot">대학부설어학원연수(D-4-1)<!-- 한국어연수(D-4-1) --></span><input type="hidden" name="SOJ_QUAL_GRP" value="D-4-1"/></a></li>
+						<li><a href="#this" name="target"><span class="main_dot">초중고생(D-4-3)<!-- 초중고생(D-4-3) --></span><input type="hidden" name="SOJ_QUAL_GRP" value="D-4-3"/></a></li>  
+						<li><a href="#this" name="target"><span class="main_dot">외국어연수(D-4-7)<!-- 외국어연수(D-4-7) --></span><input type="hidden" name="SOJ_QUAL_GRP" value="D-4-7"/></a></li>
+					</ul>
+				</div>
+				<div class="guide_box mgb_11">
+					<a href="#this" id="VC008" name="entryPurpose" class="guide_tit guide_tit08" title="상세내용 보기"><span>무역경영<!-- 무역경영 --></span></a>
+					<ul class="guide_2st">
+						<li><a href="#this" name="target"><span class="main_dot">무역고유거래(D-9-1)<!-- 무역고유거래(D-9-1) --></span><input type="hidden" name="SOJ_QUAL_GRP" value="D-9-1"/></a></li> 
+						<li><a href="#this" name="target"><span class="main_dot">수출설비(D-9-2)<!-- 수출설비(D-9-2) --></span><input type="hidden" name="SOJ_QUAL_GRP" value="D-9-2"/></a></li>    
+						<li><a href="#this" name="target"><span class="main_dot">선박설비(D-9-3)<!-- 선박설비(D-9-3) --></span><input type="hidden" name="SOJ_QUAL_GRP" value="D-9-3"/></a></li>    
+						<li><a href="#this" name="target"><span class="main_dot">경영영리사업(D-9-4)<!-- 경영영리사업(D-9-4) --></span><input type="hidden" name="SOJ_QUAL_GRP" value="D-9-4"/></a></li>
+					</ul>
+				</div>
+				<div class="guide_box">
+					<a href="#this" id="VC013" name="entryPurpose" class="guide_tit guide_tit09" title="상세내용 보기"><span>연수<!-- 연수 --></span></a>
+					<ul class="guide_2st">
+					    <li><a href="#this" name="target"><span class="main_dot">문화예술(D1-00)<!-- 문화예술(D-1) --></span><input  type="hidden" name="SOJ_QUAL_GRP" value="D-1"/></a></li>
+						<li><a href="#this" name="target"><span class="main_dot">해외직접(D-3-11)<!-- 해외직접(D-3-11) --></span><input  type="hidden" name="SOJ_QUAL_GRP" value="D-3-11"/></a></li>
+						<li><a href="#this" name="target"><span class="main_dot">기술수출(D-3-12)<!-- 기술수출(D-3-12) --></span><input type="hidden" name="SOJ_QUAL_GRP" value="D-3-12"/></a></li>
+						<li><a href="#this" name="target"><span class="main_dot">플랜트수출(D-3-13)<!-- 플랜트수출(D-3-13) --></span><input type="hidden" name="SOJ_QUAL_GRP" value="D-3-13"/></a></li>
+						<li><a href="#this" name="target"><span class="main_dot">기타기관연수(D-4-2)<!-- 기타연수(D-4-2) --></span><input type="hidden" name="SOJ_QUAL_GRP" value="D-4-2"/></a></li>   
+						<li><a href="#this" name="target"><span class="main_dot">한식조리연수(D-4-5)<!-- 한식조리연수(D-4-5) --></span><input type="hidden" name="SOJ_QUAL_GRP" value="D-4-5"/></a></li>
+						<li><a href="#this" name="target"><span class="main_dot">사설기관연수(D-4-6)<!-- 사설기관연수(D-4-6) --></span><input type="hidden" name="SOJ_QUAL_GRP" value="D-4-6"/></a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- // 5단그리드 세번째 영역 -->
+
+			<!-- 5단그리드 네번째 영역 -->
+			<div class="guide_5">
+				<div class="guide_box mgb_11">
+					<a href="#this" id="VC004" name="entryPurpose" class="guide_tit guide_tit10" title="상세내용 보기"><span>전문직 취업<!-- 전문직 취업 --></span></a>
+					<ul class="guide_2st">
+						<li><a href="#this" name="target"><span class="main_dot">단기취업(C-4)<!-- 단기취업(C-4) --></span><input  type="hidden" name="SOJ_QUAL_GRP" value="C-4"/></a></li>
+						<li><a href="#this" name="target"><span class="main_dot">구직활동(D-10-1)<!-- 구직활동(D-10-1) --></span><input  type="hidden" name="SOJ_QUAL_GRP" value="D-10-1"/></a></li>
+						<li><a href="#this" name="target"><span class="main_dot">기술창업활동(D-10-2)<!-- 기술창업활동(D-10-2) --></span><input type="hidden" name="SOJ_QUAL_GRP" value="D-10-2"/></a></li>
+						<li><a href="#this" name="target"><span class="main_dot">교수(E-1)<!-- 교수(E-1)   --></span><input type="hidden" name="SOJ_QUAL_GRP" value="E-1"/></a></li>
+						<li><a href="#this" name="target"><span class="main_dot">일반회화강사(E-2-1)<!-- 일반회화강사(E-2-1) --></span><input type="hidden" name="SOJ_QUAL_GRP" value="E-2-1"/></a></li>
+						<li><a href="#this" name="target"><span class="main_dot">학교보조교사(E-2-2)<!-- 학교보조교사(E-2-2) --></span><input type="hidden" name="SOJ_QUAL_GRP" value="E-2-2"/></a></li>
+						<li><a href="#this" name="target"><span class="main_dot">FTA영어(E-2-91)<!-- FTA영어(E-2-91) --></span><input type="hidden" name="SOJ_QUAL_GRP" value="E-2-91"/></a></li>
+						<li><a href="#this" name="target"><span class="main_dot">연구(E-3)<!-- 연구(E-3) --></span><input type="hidden" name="SOJ_QUAL_GRP" value="E-3"/></a></li> 
+						<li><a href="#this" name="target"><span class="main_dot">기술지도(E-4)<!-- 기술지도(E-4) --></span><input type="hidden" name="SOJ_QUAL_GRP" value="E-4"/></a></li> 
+						<li><a href="#this" name="target"><span class="main_dot">전문직업(E-5)<!-- 전문직업(E-5) --></span><input type="hidden" name="SOJ_QUAL_GRP" value="E-5"/></a></li> 
+						<li><a href="#this" name="target"><span class="main_dot">예술연예(E-6-1)<!-- 예술연예(E-6-1) --></span><input type="hidden" name="SOJ_QUAL_GRP" value="E-6-1"/></a></li>
+						<li><a href="#this" name="target"><span class="main_dot">호텔유흥(E-6-2)<!-- 호텔유흥(E-6-2) --></span><input type="hidden" name="SOJ_QUAL_GRP" value="E-6-2"/></a></li>
+						<li><a href="#this" name="target"><span class="main_dot">운    동(E-6-3)<!-- 운    동(E-6-3) --></span><input type="hidden" name="SOJ_QUAL_GRP" value="E-6-3"/></a></li>
+						<li><a href="#this" name="target"><span class="main_dot">특정활동(E-7-1)<!-- 특정활동(E-7-1) --></span><input type="hidden" name="SOJ_QUAL_GRP" value="E-7-1"/></a></li>
+						<li><a href="#this" name="target"><span class="main_dot">FTA독립(E-7-91)<!-- FTA독립(E-7-91) --></span><input type="hidden" name="SOJ_QUAL_GRP" value="E-7-91"/></a></li>
+						<li><a href="#this" name="target"><span class="main_dot">특정능력(F-5-11)<!-- 특정능력(F-5-11) --></span><input type="hidden" name="SOJ_QUAL_GRP" value="F-5-11"/></a></li>
+					</ul>
+				</div>
+				<div class="guide_box mgb_11">
+					<a href="#this" id="VC009" name="entryPurpose"  class="guide_tit guide_tit11" title="상세내용 보기"><span>재외동포<!-- 재외동포 --></span></a>
+					<ul class="guide_2st">
+						<li><a href="#this" name="target"><span class="main_dot">재외동포본인(F-4-11)<!-- 비고시본인(F-4-11) --></span><input type="hidden" name="SOJ_QUAL_GRP" value="F-4-11"/></a></li>
+						<li><a href="#this" name="target"><span class="main_dot">재외동포 직계가족(F-4-12)<!-- 비고시부모(F-4-12) --></span><input type="hidden" name="SOJ_QUAL_GRP" value="F-4-12"/></a></li>
+						<li><a href="#this" name="target"><span class="main_dot">DE계열 6개월이상 체류자(F-4-13)<!-- DE 체류자(F-4-13) --></span><input type="hidden" name="SOJ_QUAL_GRP" value="F-4-13"/></a></li>
+						<li><a href="#this" name="target"><span class="main_dot">대학 졸업자(F-4-14)<!-- 대학 졸업자(F-4-14) --></span><input type="hidden" name="SOJ_QUAL_GRP" value="F-4-14"/></a></li>
+						<li><a href="#this" name="target"><span class="main_dot">OECD영주자(F-4-15)<!-- OECD영주자(F-4-15) --></span><input type="hidden" name="SOJ_QUAL_GRP" value="F-4-15"/></a></li>
+						<li><a href="#this" name="target"><span class="main_dot">법인대표 등(F-4-16)<!-- 법인대표 등(F-4-16) --></span><input type="hidden" name="SOJ_QUAL_GRP" value="F-4-16"/></a></li>
+						<li><a href="#this" name="target"><span class="main_dot">10만불 기업가(F-4-17)<!-- 10만불 기업가(F-4-17) --></span><input type="hidden" name="SOJ_QUAL_GRP" value="F-4-17"/></a></li>
+						<li><a href="#this" name="target"><span class="main_dot">다국적기업(F-4-18)<!-- 다국적기업(F-4-18) --></span><input type="hidden" name="SOJ_QUAL_GRP" value="F-4-18"/></a></li>   
+						<li><a href="#this" name="target"><span class="main_dot">동포단체대표(F-4-19)<!-- 동포단체대표(F-4-19) --></span><input type="hidden" name="SOJ_QUAL_GRP" value="F-4-19"/></a></li> 
+						<li><a href="#this" name="target"><span class="main_dot">공무원 등(F-4-20)<!-- 공무원 등(F-4-20) --></span><input type="hidden" name="SOJ_QUAL_GRP" value="F-4-20"/></a></li>    
+						<li><a href="#this" name="target"><span class="main_dot">교원(F-4-21)<!-- 교원(F-4-21) --></span><input type="hidden" name="SOJ_QUAL_GRP" value="F-4-21"/></a></li>         
+						<li><a href="#this" name="target"><span class="main_dot">60세이상자(F-4-25)<!-- 60세이상자(F-4-25) --></span><input type="hidden" name="SOJ_QUAL_GRP" value="F-4-25"/></a></li>   
+				</ul>
+				</div>
+				<div class="guide_box">
+					<a href="#this" id="VC014" name="entryPurpose" class="guide_tit guide_tit12" title="상세내용 보기"><span>비전문직 취업<!-- 비전문직 취업 --></span></a>
+					<ul class="guide_2st">
+							<li><a href="#this" name="target"><span class="main_dot">제 조 업(E-9-1)<!-- 제 조 업(E-9-1) --></span><input type="hidden" name="SOJ_QUAL_GRP" value="E-9-1"/></a></li>     
+							<li><a href="#this" name="target"><span class="main_dot">건 설 업(E-9-2)<!-- 건 설 업(E-9-2) --></span><input type="hidden" name="SOJ_QUAL_GRP" value="E-9-2"/></a></li>     
+							<li><a href="#this" name="target"><span class="main_dot">농  업(E-9-3)<!-- 농  업(E-9-3) --></span><input type="hidden" name="SOJ_QUAL_GRP" value="E-9-3"/></a></li>       
+							<li><a href="#this" name="target"><span class="main_dot">어    업(E-9-4)<!-- 어    업(E-9-4) --></span><input type="hidden" name="SOJ_QUAL_GRP" value="E-9-4"/></a></li>     
+							<li><a href="#this" name="target"><span class="main_dot">서비스업(E-9-5)<!-- 냉장냉동(E-9-5) --></span><input type="hidden" name="SOJ_QUAL_GRP" value="E-9-5"/></a></li>     
+							<li><a href="#this" name="target"><span class="main_dot">내항선원(E-10-1)<!-- 내항선원(E-10-1) --></span><input type="hidden" name="SOJ_QUAL_GRP" value="E-10-1"/></a></li>    
+							<li><a href="#this" name="target"><span class="main_dot">어 선 원(E-10-2)<!-- 어 선 원(E-10-2) --></span><input type="hidden" name="SOJ_QUAL_GRP" value="E-10-2"/></a></li>    
+							<li><a href="#this" name="target"><span class="main_dot">순항선원(E-10-3)<!-- 순항선원(E-10-3) --></span><input type="hidden" name="SOJ_QUAL_GRP" value="E-10-3"/></a></li>    
+							<li><a href="#this" name="target"><span class="main_dot">외교가사보조(F-1-21)<!-- 외교가사보조(F-1-21) --></span><input type="hidden" name="SOJ_QUAL_GRP" value="F-1-21"/></a></li>
+							<li><a href="#this" name="target"><span class="main_dot">고액가사보조(F-1-22)<!-- 고액가사보조(F-1-22) --></span><input type="hidden" name="SOJ_QUAL_GRP" value="F-1-22"/></a></li>
+							<li><a href="#this" name="target"><span class="main_dot">첨단가사보조(F-1-23)<!-- 첨단가사보조(F-1-23) --></span><input type="hidden" name="SOJ_QUAL_GRP" value="F-1-23"/></a></li>
+							<li><a href="#this" name="target"><span class="main_dot">전문가사보조(F-1-24)<!-- 전문가사보조(F-1-24) --></span><input type="hidden" name="SOJ_QUAL_GRP" value="F-1-24"/></a></li>
+							       
+					</ul>
+				</div>
+			</div>
+			<!-- // 5단그리드 네번째 영역 -->
+
+			<!-- 5단그리드 다섯번째 영역 -->
+			<div class="guide_5">
+				<div class="guide_box mgb_11">
+					<a href="#this" id="VC005" name="entryPurpose" class="guide_tit guide_tit13" title="상세내용 보기"><span class="long_tit_guide">주재<!-- 주재 --></span></a>
+					<ul class="guide_2st">
+						<li><a href="#this" name="target"><span class="main_dot">외국기업(D-7-1)<!-- 외국기업(D-7-1) --></span><input type="hidden" name="SOJ_QUAL_GRP" value="D-7-1"/></a></li> 
+						<li><a href="#this" name="target"><span class="main_dot">내국기업(D-7-2)<!-- 내국기업(D-7-2) --></span><input type="hidden" name="SOJ_QUAL_GRP" value="D-7-2"/></a></li> 
+						<li><a href="#this" name="target"><span class="main_dot">FTA전근(D-7-91)<!-- FTA전근(D-7-91) --></span><input type="hidden" name="SOJ_QUAL_GRP" value="D-7-91"/></a></li> 
+						<li><a href="#this" name="target"><span class="main_dot">FTA계약(D-7-92)<!-- FTA계약(D-7-92) --></span><input type="hidden" name="SOJ_QUAL_GRP" value="D-7-92"/></a></li> 
+					</ul>
+				</div>
+				<div class="guide_box mgb_11">
+					<a href="#this" id="VC010" name="entryPurpose" class="guide_tit guide_tit14" title="상세내용 보기"><span>방문취업<!-- 방문취업 --></span></a>
+					<ul class="guide_2st">
+						<li><a href="#this" name="target"><span class="main_dot">연고방취(H-2-1)<!-- 연고방취(H-2-1) --></span><input type="hidden" name="SOJ_QUAL_GRP" value="H-2-1"/></a></li> 
+						<li><a href="#this" name="target"><span class="main_dot">유학방취(H-2-2)<!-- 유학방취(H-2-2) --></span><input type="hidden" name="SOJ_QUAL_GRP" value="H-2-2"/></a></li>
+						<li><a href="#this" name="target"><span class="main_dot">추첨방취(H-2-5)<!-- 추첨방취(H-2-5) --></span><input type="hidden" name="SOJ_QUAL_GRP" value="H-2-5"/></a></li>
+						<li><a href="#this" name="target"><span class="main_dot">만기방취(H-2-7)<!-- 만기방취(H-2-7) --></span><input type="hidden" name="SOJ_QUAL_GRP" value="H-2-7"/></a></li>								
+					</ul>
+				</div>
+				<div class="guide_box">
+					<a href="#this" id="VC015" name="entryPurpose"  class="guide_tit guide_tit15" title="상세내용 보기"><span class="long_tit_guide">외교<!-- 외교  --> &middot; 공무<!-- 공무 --></span></a>
+					<ul class="guide_2st">
+						<li><a href="#this" name="target"><span class="main_dot">외교 (A-1)<!-- 외교 (A-1) --></span><input type="hidden" name="SOJ_QUAL_GRP" value="A-1"/></a></li>
+						<li><a href="#this" name="target"><span class="main_dot">공무 (A-2)<!-- 공무 (A-2) --></span><input type="hidden" name="SOJ_QUAL_GRP" value="A-2"/></a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- // 5단그리드 다섯번째 영역 -->
+
+		</div>
+
+	</div>
+	<!-- // 입국목적별 비자안내 컨텐츠 -->
+
+<!-- // main_container -->
+
+
+		</div>
+		<!-- // main_container -->
+
+		<!-- footer -->
+		<div id="footer">
+			
+
+
+
+<script type="text/javaScript">
+// <![CDATA[
+    $(document).ready(function(){
+    	
+    	$("#" + "ko" + "_foot_list").removeClass("dis_none");
+    	
+    	// 이용약관
+    	$("a[id$='foot_a_use']").on("click", function(){
+    		var menuSubmit = new ComSubmit();
+			menuSubmit.setUrl("/openPage.do" + "?MENU_ID=10802");
+			menuSubmit.tran();
+    	});
+    	
+    	// 개인정보처리방침
+    	$("a[id$='foot_a_person']").on("click", function(){
+    		var menuSubmit = new ComSubmit();
+			menuSubmit.setUrl("/openPage.do" + "?MENU_ID=10803");
+			menuSubmit.tran();
+    	});
+    	
+    	// 저작권보호정책
+    	$("a[id$='foot_a_protect']").on("click", function(){
+    		var menuSubmit = new ComSubmit();
+			menuSubmit.setUrl("/openPage.do" + "?MENU_ID=10804");
+			menuSubmit.tran();
+    	});
+    	
+    	// 이메일무단수집거부
+    	$("a[id$='foot_a_email']").on("click", function(){
+   			var strFile = "/biz/au/AU03S";
+   			var strPopName="emailPopup"; //팝업 명 설정
+   			gfn_openPopUp(strFile, strPopName, null, "500", "280");  
+    	});
+    	
+    	// 고객센터
+    	$("a[id$='foot_a_custom']").on("click", function(){
+	    	var menuSubmit = new ComSubmit();
+			menuSubmit.setUrl("/openPage.do" + "?MENU_ID=10501");
+			menuSubmit.tran();
+    	});
+    	
+    	//패밀리사이트 이동
+    	$("#move_family_site").on("click", function(){
+    		var goUrl = $("#select_family_site").val();
+    		if(goUrl == 'http://www.hikorea.go.kr/'){
+    			if("KO" == 'EN'){
+    				goUrl = goUrl+"/pt/main_en.pt";
+    			}else if("KO" == 'CH'){
+    				goUrl = goUrl+"/pt/main_zh.pt";
+    			}
+    		}
+    		if(gfn_isNull(goUrl)==false){
+    			window.open(goUrl,"_blank");
+    		}
+    	});
+    });
+    
+// ]]>
+</script>
+<div class="foot_con01">
+	<ul id="ko_foot_list" class="foot_list dis_none">
+		<li><a href="#this" id="ko_foot_a_use">이용약관</a></li>
+		<li class="foot_privacy"><a href="#this" id="ko_foot_a_person">개인정보 처리방침</a></li>
+		<li><a href="#this" id="ko_foot_a_protect">저작권 보호정책</a></li>
+		<li><a href="#this" id="ko_foot_a_email" title="새창 열림">이메일 무단수집거부</a></li>			
+		<li><a href="#this" id="ko_foot_a_custom">고객센터</a></li>
+	</ul>
+	<ul id="en_foot_list" class="foot_list dis_none">
+		<li><a href="#this" id="en_foot_a_use">Terms and Conditions</a></li>
+		<li class="foot_privacy"><a href="#this" id="en_foot_a_person">Privacy Policy</a></li>
+		<li><a href="#this" id="en_foot_a_protect">Copyright Protection Policy</a></li>
+		<li><a href="#this" id="en_foot_a_email" target="_blank">Prohibition of Unauthorized Collection of E-mail Address</a></li>			
+		<li><a href="#this" id="en_foot_a_custom">Help Center</a></li>
+	</ul>
+	<ul id="zh_foot_list" class="foot_list dis_none">
+		<li><a href="#this" id="zh_foot_a_use">使用条款</a></li>
+		<li class="foot_privacy"><a href="#this" id="zh_foot_a_person">个人信息处理方针</a></li>
+		<li><a href="#this" id="zh_foot_a_protect">版权保护政策</a></li>
+		<li><a href="#this" id="zh_foot_a_email" target="_blank">拒绝自动接收邮件</a></li>			
+		<li><a href="#this" id="zh_foot_a_custom">客服中心</a></li>
+	</ul>
+	<address>
+		<p class="address_txt">주소 : 경기도 과천시 관문로 47 정부과천청사 1동 ( 외국인종합안내센터 : 국번없이 1345 )</p>
+		<p>COPYRIGHT&copy;MINISTRY OF JUSTICE. REPUBLIC OF KOREA. ALL RIGHT RESERVED.</p>
+	</address>
+	<p class="foot_notice">※ 비자포털은 IE 7 이상, 크롬, 파이어폭스, 사파리, 오페라 브라우저와 1024*768 화면에 최적화 되어 있습니다.</p>
+</div>
+<div class="foot_con02">
+	<select id="select_family_site" name="select_family_site"  title="관련사이트 선택" >
+<option value=""  >관련 사이트</option>
+<option value="http://www.moj.go.kr"  >법무부</option>
+<option value="http://www.motie.go.kr"  >산업통상자원부</option>
+<option value="http://global.seoul.go.kr/"  >서울글로벌센터</option>
+<option value="http://www.moel.go.kr"  >고용노동부</option>
+<option value="http://www.investkorea.org/ikwork/iko/kor/main/index.jsp"  >인베스트 코리아</option>
+<option value="http://www.immigration.go.kr"  >출입국외국인정책본부</option>
+<option value="http://www.kotra.or.kr"  >KOTRA</option>
+<option value="http://www.hrdkorea.or.kr/"  >한국산업인력공단</option>
+<option value="http://www.keis.or.kr"  >한국고용정보원</option>
+<option value="http://www.korea.net"  >KOREA.NET</option>
+<option value="http://world.kbs.co.kr/korean/"  >KBS WORLD</option>
+<option value="http://www.hikorea.go.kr"  >하이 코리아</option>
+</select>
+
+	<a href="#this" class="btn_family" id="move_family_site" title="새창 이동">
+		<span class="btn_start"></span>이동<span class="btn_end"></span>
+	</a>
+</div>
+
+		</div>
+		<!-- // footer -->
+	</div>
+	<!-- // wrap -->
+	<form name="frmCmmAuth" id="frmCmmAuth" method="post" action="#">
+	<input type="hidden" name="CMM_TEST_VAL" id="CMM_TEST_VAL" value="test"  />
+</form>
+
+<form style="display: none" name="formFile" id="formFile" method="post" enctype="multipart/form-data" action="#"></form>
+</body>
+
+<!-- Mirrored from www.visa.go.kr/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 21 Sep 2022 15:26:54 GMT -->
+</html>
