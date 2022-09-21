@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+
+/* 20171913 웹표준화작업 수정 유수진 */
+@font-face {
+	font-family:'nng';
+	src:url('../fonts/NanumGothic.html');
+ 	src:local(nng),
+		url('../fonts/NanumGothicd41d.html?#iefix') format('embedded-opentype'),
+		url('../fonts/NanumGothic-2.html') format('woff');
+}
+
+@font-face {
+	font-family:'nnm';
+	src:url('../fonts/NanumMyeongjo.html');
+ 	src:local(nnm),
+		url('../fonts/NanumMyeongjod41d.html?#iefix') format('embedded-opentype'),
+		url('../fonts/NanumMyeongjo-2.html') format('woff');
+}

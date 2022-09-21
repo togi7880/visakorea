@@ -1,0 +1,113 @@
+@charset "utf-8";
+
+html, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;	
+	border: 0;
+	padding: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+body {
+	margin:0;	
+	border:0;
+	padding:0;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+/* img {display:block} */   /* 20171010 웹접근성작업 수정 ysj */
+
+select {font-size:12px;margin:0;color:#272727;background:#fff;vertical-align:middle;border:1px solid #cdcdcd;padding:4px 3px;border-radius:3px;padding:3px 3px 3px 0}
+input{vertical-align:middle;margin-right:-4px;color:#272727}
+input[type=text], input[type=password] {font-size:12px;border: 1px solid #cdcdcd;background:#fff;padding:5px;height:16px;border-radius:3px}
+input[type=radio]{margin-right:4px;margin-top:2px}
+input.input_img {margin-left:4px}
+textarea {border:1px solid #ccc;font-size:12px}
+label {vertical-align:middle;font-weight:normal;word-break:normal}
+span {word-break:normal}
+
+/* 본문 기본 설정, 리스트 블릿 제거, 인용 구문 제거 */
+body.empty {background:url(../images/common/m_visual_bg.jpg) 0 0 repeat} 
+
+ol, ul { list-style: none; }
+
+
+/* 제목 글꼴 크기 설정 */
+body h3 {font-size:30px;color:#c33838;font-weight:bold;margin-bottom:36px}
+body h4 {font-size:16px;color:#222;padding-left:1px;margin-bottom:16px;font-weight:bold}
+body h5 {color:#515659;font-size:15px;padding-left:1px;margin-bottom:16px;font-weight:bold}
+h1, h2, h3, h4, h5, h6 { font-size: 1em }
+h1 img, h2 img, h3 img,
+h4 img, h5 img, h6 img {
+  margin: 0;
+}
+
+/* 제목, 단락 상.하 공간 설정 */
+p { margin: 0; padding: 0; }
+
+/* 하이퍼링크 기본 스타일 재정의 */
+a:link, a:visited { 
+	text-decoration: none;
+	color: #252525;
+}
+
+table a:hover{color:#184d9d;text-decoration:underline}
+
+/* img를 포함한 a요소의 보더, 패딩 초기화 설정 */
+a img {
+	border: 0; 
+	padding: 0;
+}
+
+/* insert, delete */
+ins { text-decoration: none; }
+del { text-decoration: line-through; }
+
+
+/* 테이블 설정 */
+/* 20171010 웹접근성작업 수정 ysj */
+table {
+	/* border-collapse: collapse; */
+	border-spacing: 0;
+	table-layout: fixed;
+	position: relative;
+}
+table, th, td { border: 0; word-break:normal}
+table th {color:#3b3a3a;line-height:14px}
+table td {line-height:14px;color: #252525}
+table th label {font-weight:bold}
+/* 20171010 웹접근성작업 수정 ysj */
+caption {
+	/* visibility: hidden; */
+	/* height: 0; */
+	/* line-height:0; */
+	position:absolute; text-indent:-10000em; top:auto; height:1px; overflow:hidden;
+}
+
+.visa_container.group {overflow:visible}
+.group {overflow:hidden} /* 20171914 웹표준화작업 수정 ysj */
+.group:after {content:"";display:block;clear:both;height:0}
+
+fieldset {position:relative;overflow:hidden;}
+legend {position:absolute;top:-100px;display:block;overflow:hidden;height:0;text-indent:-10000px;line-height:0;}
+
+.f_right {float:right !important}
+.m_bt0 {margin-bottom:0 !important}
+.txtHidden {text-indent:-9999px;line-height:0}
+
+/* 스킵네비게이션 */
+.skipNav {margin-top:-100px;z-index: 50;text-align: center;background: #333;color: #fff !important;font-weight:bold;font-size:2em;position:absolute;top:0;left:0;display:block;width:100%;height:50px;line-height:50px;}
+.skipNav:hover,.skipNav:active,.skipNav:focus {margin-top:0;}
+
+/*hide*/
+.hide{position:absolute;top:-999px;left:-999px;width:0;height:0;overflow:hidden;font-size:0;color:transparent}

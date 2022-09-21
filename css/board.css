@@ -1,0 +1,312 @@
+@charset "utf-8";
+/* 여권사진 */
+.photo_tit02 {text-align:center;padding:0 !important;vertical-align:middle}
+.photo_tit02 img{display:inline}
+
+/* board_top_style01 */ 
+.top_zone01 {position:relative;height:22px;margin-bottom:15px}
+.top_zone01 .total {background: url(../images/ico/ico_total.gif) no-repeat 1px 0;padding-left:17px}
+.top_zone01 .top_btn {position:absolute;top:0; right:0}
+.top_zone01 .top_btn input[type=image]{margin-left:4px;margin-right:0px}
+
+/* board_top_style02 */
+.top_zone02 {margin-bottom:15px;position:relative}
+.top_zone02 .total {background: url(../images/ico/ico_total.gif) no-repeat 1px 0;padding-left:17px}
+.top_zone02 .srch_m {position:absolute; top:0;right:0;margin-bottom:0}
+
+/* board_list_style01 */
+.board_list01 {width:100%;border-top:2px solid #252525;border-bottom:1px solid #ccc}
+.board_list01 thead th:first-child{background-image:none}
+.board_list01 thead th {border-bottom:1px solid #ccc;padding:12px 0 13px 0;color:#3b3a3a;vertical-align:middle}
+/* .board_list01 thead th {border-bottom:1px solid #ccc;padding:12px 0 13px 0;color:#3b3a3a;background:url(/images/ico/th_bar.gif) #f6f6f6 no-repeat left center;vertical-align:middle} */
+.board_list01 tbody td {border-top:1px solid #ccc;padding:10px 0;text-align:center;vertical-align:middle}
+.board_list01 tbody tr:first-child td {border:none}
+.board_list01 tbody td.title {text-align:left}
+.board_list01 tbody td.title.pdl_20 {padding-left:20px}
+.board_list01 tbody td a {display:inline-block}
+/* MPCS01S.jsp - 결제현황 list 부분 - 버튼 들어감에 따른 패딩값 조절 */
+.board_list01 tbody td.print_on {padding:3px 0}
+/* CCNO01S.jsp - board_list01 이미지 block 가운데 정렬 위해 inline-block 처리  */
+img.display_ib {display:inline-block}
+
+/* board_list_style02 */
+.board_list02 {width:100%;border-top:1px solid #c4c4c4;border-bottom:1px solid #ccc}
+.board_list02 thead th:first-child{background-image:none}
+.board_list02 thead th {text-align:center;background:#f7f7f7;color:#3b3a3a;background:url(../images/ico/th_bar.gif) #f6f6f6 no-repeat left center;padding:12px 0 13px 0;border-bottom:1px solid #ccc;vertical-align:middle}
+.board_list02 tbody td {padding:10px 0;border-bottom:1px solid #ccc;vertical-align:middle;text-align:center}
+.board_list02 tbody td.input_date {text-align:left;padding-left:6px}
+.board_list02 tbody td.input_place {text-align:left;padding-left:10px}
+.board_list02 .tit_left {text-align:left;padding-left:35px}
+.board_list02 .tit_left02 {text-align:left;padding-left:25px}
+.pop_over {height:305px;overflow-y:auto;overflow-x:hidden}
+.board_list02 tbody td.td_align_l {text-align:left;padding:10px 10px 10px 15px}
+
+/* board_list_style03 */
+.board_list03 {width:100%;border-top:1px solid #c4c4c4;border-bottom:1px solid #ccc}
+.board_list03 thead th {text-align:center;color:#3b3a3a;padding:12px 0 13px 0;border-bottom:1px solid #ccc;vertical-align:middle;background:url(../images/ico/th_bar.gif) #f6f6f6 no-repeat right center}
+.board_list03 thead th.non_bg {background-image:none}
+.board_list03 tbody td {padding:6px 7px;border-bottom:1px solid #ccc;vertical-align:middle}
+.board_list03 tbody td.align_c {padding:10px 0px}
+.board_list03 a.che_tit, .board_list03 a.che_tit .vw_num_box {display:inline-block;text-decoration:none}
+.board_list03 a.che_tit .vw_num_box {border:1px solid #d4d4d4;border-radius:6px;width:128px;padding:5px 0}
+.board_list03 a.che_tit .vw_num_box .vw_num {font-size:10px;color:#272727}
+.board_list03 .che_tit:hover .vw_num_box, .board_list03 .che_tit.on .vw_num_box {color:#fff;font-weight:bold;background:#c33838;border-radius:6px}
+.board_list03 .che_tit:hover .vw_num_box .vw_num, .board_list03 .che_tit.on .vw_num_box .vw_num {color:#fff;font-weight:bold}
+
+.board_list03 tbody td.td_pad_r {padding:6px 35px 6px 35px}
+
+/* VGSQ02S.jsp - li스타일 기본 on 호버시 블루텍스트 */
+.board_list03 .stay_link span {color:#1895d7;border-bottom:1px solid #1895d7}
+.board_list03 .stay_link.on {color:#1895d7;font-weight:bold}
+.board_list03 .stay_link.on span{border-bottom:1px solid #1895d7}
+.board_list03 .stay_link:hover {color:#1895d7;text-decoration:none !important;font-weight:bold}
+.board_list03 .stay_link:hover span {border-bottom:1px solid #1895d7}
+
+/* APOVDO07A.jsp의 스크롤 board부분 */
+.scroll_box {width:100%;overflow-x:scroll}
+.scroll_box table thead th, .scroll_box table tbody td {text-align:center}
+
+/* APVC02S.jsp - board_list_style03에서 클래스 추가하여 적용 */
+p.tit_crew {line-height:17px;margin-bottom:10px}
+.board_list03 tbody td.bor_dot {border-bottom:1px dotted #e5e5e5}
+
+/* APEV02S.jsp - board_list_style03에서 클래스 추가하여 적용 */
+.board_list03.elevisa_list tbody td, .board_list03.elevisa_list tbody th {line-height:17px}
+
+/* board_list_style04 */
+.board_list04 {width:100%;border-top:1px solid #c4c4c4;border-bottom:1px solid #ccc}
+.board_list04 thead th:first-child {background-image:none}
+.board_list04 thead th {text-align:center;color:#3b3a3a;padding:12px 0 13px 0;border-bottom:1px solid #ccc;vertical-align:middle;background:url(../images/ico/th_bar.gif) #f6f6f6 no-repeat left center}
+.board_list04 thead th.non_bg {background-image:none;border-left:1px solid #ccc}
+.board_list04 tbody td {padding:10px 0;text-align:center;border-bottom:1px solid #ccc;vertical-align:middle}
+
+/* board_list_style05 */
+.board_list05 {width:100%;border-top:1px solid #c4c4c4;border-bottom:1px solid #ccc}
+.board_list05 thead th {text-align:center;color:#3b3a3a;padding:12px 0 13px 0;border-bottom:1px solid #ccc;vertical-align:middle;background:#f6f6f6}
+.board_list05 tbody td {padding:10px 0;text-align:center;border-bottom:1px solid #ccc;border-left:1px solid #ccc;vertical-align:middle}
+.board_list05 tbody td:first-child {border-left:none}
+
+
+/* paging */
+.paging {text-align:center}
+.paging  a.num {padding:0 6px;display:inline-block;width:25px;line-height:25px;color:#222}
+.paging  a.num.on {background:url(../images/ico/ico_numbg.gif) 7px 0 no-repeat;color:#fff}
+.paging a.prev {display:inline-block;margin-left:0px}
+.paging a {display:inline-block}
+
+/* board_view style01 */
+.board_view01 {width:100%;border-top:2px solid #252525;border-bottom:1px solid #ccc}
+.board_view01 tbody th {text-align:left;background:#f7f7f7;color:#3b3a3a}
+/* CCFA02S.jsp - th 제목부분 스타일 변경 */
+.board_view01 tbody th.list_tit {font-size:13px;color:#000;letter-spacing:0.1px}
+.board_view01 tbody .no_line_b th, .board_view01 tbody .no_line_b td {border-bottom:none}
+.board_view01 tbody th, .board_view01 tbody td {padding:15px 0 16px 16px;border-bottom:1px solid #ccc}
+.board_view01 tbody td.view_text {border-top:1px solid #ccc; border-bottom:1px solid #ccc;padding:45px 18px 45px 18px}
+.board_view01 tbody th.th_file {padding:0 0 0 15px; vertical-align:middle}
+/* CCNO02S.jsp - 등록일, 담담자 정보 담긴 border box  */
+.notice_border_box {border:1px solid #dfdfdf;padding:20px 35px 25px;letter-spacing:0.01px}
+.board_view01.bor_top_ccc {border-top:1px solid #ccc}
+ 
+/* board_view style02 */
+.board_view02 {width:100%;border-top:1px solid #c4c4c4;/* border-bottom:1px solid #ccc; */} /* 20171010 웹접근성작업 수정 유수진 */
+.board_view02 tbody th {text-align:left;background:#f7f7f7;color:#3b3a3a;vertical-align:middle}
+.board_view02 tbody th.th_group {border-right:1px solid #ccc}
+.board_view02 tbody th, .board_view02 tbody td {padding:10px 0 10px 9px;border-bottom:1px solid #ccc;vertical-align:middle;}
+/* 진행현황 조회 및 출력 */
+.board_view02 tbody th.no_reason {padding:10px 20px 10px 9px}
+
+/* board_view style03 */
+.board_view03 {width:100%;border-top:1px solid #c4c4c4;border-bottom:1px solid #ccc}
+.board_view03 tbody th {text-align:center;background:#f7f7f7;color:#3b3a3a;padding:10px 0;border-bottom:1px solid #ccc;vertical-align:middle}
+.board_view03 tbody th.th_group {border-right:1px solid #ccc}
+.board_view03 tbody td {padding:10px 0 10px 9px;border-bottom:1px solid #ccc;vertical-align:middle}
+
+/* board_view style04 */
+.board_view04 {width:100%;border-top:1px solid #c4c4c4;border-bottom:1px solid #ccc}
+.board_view04 tbody th {text-align:center;background:#f7f7f7;color:#3b3a3a;padding:10px 0;border-bottom:1px solid #ccc;vertical-align:middle}
+.board_view04 tbody th.th_group {border-right:1px solid #ccc}
+.board_view04 tbody td {text-align:center;border-bottom:1px solid #ccc;vertical-align:middle}
+
+/* APVC03S.jsp - board_view style02 컨텐츠 링크 스타일 */
+.board_view02 tbody td a.home_link {color:#184d9d;text-decoration:underline}
+
+/* board_wright style01 */
+.board_wright01 {width:100%;border-top:1px solid #c4c4c4;border-bottom:1px solid #ccc}
+.board_wright01 tbody th {text-align:left;background:#f7f7f7;color:#3b3a3a;vertical-align:middle}
+.board_wright01 tbody th.th_group {border-right:1px solid #ccc}
+.board_wright01 tbody th, .board_wright01 tbody td {padding:6px 0 6px 9px;border-bottom:1px solid #ccc;vertical-align:middle}
+
+/*board_none01 style01*/
+.board_none01 {width:100%;border-top:1px solid #c4c4c4;border-bottom:1px solid #ccc}
+.board_none01 tbody td {text-align:center;padding:10px 0;border-bottom:1px solid #ccc;vertical-align:middle}
+
+/*board_vw style*/
+.board_vw {width:100%;border-top:1px solid #ccc;border-bottom:1px solid #ccc;background:#f6f6f6}
+.board_vw tbody th, .board_vw tbody td {text-align:left;color:#252525;font-size:13px;padding-bottom:9px;line-height:17px}
+.board_vw tbody th {padding-left:26px;font-weight:normal}
+.board_vw tbody .fir_vw {padding-top:26px}
+.board_vw tbody td.vw_btn_box {padding-left:19px;padding-bottom:27px}
+
+/* APEV04A.jsp - board_wright style01 */
+.border_r {border-right:1px solid #ccc}
+.etc_p {margin:10px 0 0 16px}
+
+/* REDE02A.jsp style - 제외공관 주소 연락처 */
+.diplomatic_addr {margin-top:5px}
+.diplomatic_addr p {margin-top:7px}
+.diplomatic_addr .dip_adr {width:260px;float:left}
+.diplomatic_addr .dip_num {width:150px;float:left;margin-left:20px}
+
+/* board_wright style02 */
+.board_wright02 {width:100%;border-top:1px solid #c4c4c4;border-bottom:1px solid #ccc}
+.board_wright02 tbody th {text-align:left;background:#f7f7f7;color:#3b3a3a;vertical-align:middle;padding:6px 0 6px 25px;border-bottom:1px solid #ccc}
+.board_wright02 tbody th:first-child.point_th {padding-left:9px}
+.board_wright02 tbody th.th_group {border-right:1px solid #ccc}
+.board_wright02 tbody td {padding:6px 0 6px 9px;border-bottom:1px solid #ccc}
+
+/* board_wright style03 - APOVDO05P8.jsp 관련 테이블 클래스 추가 스타일 변경 */
+table.board_wright03 {border-collapse:collapse}
+/* board_wright style03 - APOVDO05P8.jsp 사파리 이미지 영역 크기로 인한 tr 높이값 통일 */
+table.board_wright03.p_appli_table tbody td {padding:9px 0 9px 9px}
+.board_wright03 {width:100%;border-top:1px solid #7f7f7f;border-bottom:1px solid #b2b2b2}
+.board_wright03 tbody th {background:#f7f7f7}
+.board_wright03 tbody th, .board_wright03 tbody td {padding:6px 0 6px 9px;text-align:left;border-top:1px solid #d7d7d7;border-bottom:none;border-left:1px solid #d7d7d7;vertical-align:middle}
+/* board_wright style03 - APOVDO05P8.jsp th,td first 보더 dotted 제거 */
+.board_wright03 tbody th:first-child {border-left:none}
+.board_wright03 tbody tr:first-child th, .board_wright03 tbody tr:first-child td {border-top:none}
+/* board_wright style03 - APOVDO05P8.jsp th bg 흰색 */
+.board_wright03 tbody th.p_application {background:#fff;vertical-align:middle;text-align:center;border-right:1px solid #b5b5b5;border-left:none}
+.board_wright03 tbody tr th.p_one_th {vertical-align:middle;border-right:1px solid #b5b5b5;}
+/* board_wright style03 - APOVDO05P8.jsp th td 보더 */
+.board_wright03 tbody th.bor_l_none, .board_wright03 tbody td.bor_l_none {border-left:none}
+.board_wright03.p_appli_table02 tbody td {text-align:center;padding:6px 0}
+.board_wright03.p_appli_table02 tbody td span.on {display:inline-block;height:14px}
+
+/* board_wright style04 */
+.board_wright04 {width:100%;border-top:1px solid #bbbec0;letter-spacing:0}
+.board_wright04 thead th{text-align:left;padding:13px 21px;font-size:13px;color:#1f1e1e;font-weight:bold;background:#eaedf0;vertical-align:middle;border-bottom:1px solid #bbbec0}
+.board_wright04 tbody th {background:#f5f5f5;color:#3b3a3a;vertical-align:middle}
+.board_wright04 tbody th.th_group {border-right:1px solid #ccc}
+.board_wright04 tbody td.td_group {border-right:1px solid #ccc}
+.board_wright04 tbody th, .board_wright04 tbody td {text-align:left;padding:6px 9px;border-bottom:1px solid #ccc;vertical-align:middle}
+.board_wright04 tbody tr.only_txt th, .board_wright04 tbody tr.only_txt td {padding:12px 0 12px 9px}
+.board_wright04 .in_table01 {width:540px;margin:15px auto;border-left:1px solid #ccc;border-right:1px solid #ccc}
+
+/* board_wright style05*/
+.board_wright05 {width:100%;border-top:1px solid #bbbec0;letter-spacing:0}
+.board_wright05 thead th.border_non{border-left:none}
+.board_wright05 tbody th.border_non{border-left:none}
+.board_wright05 thead th{text-align:center;padding:13px 21px;font-size:12px;color:#3b3a3a;background:#f5f5f5;vertical-align:middle;border-left:1px solid #bbbec0;border-bottom:1px solid #bbbec0}
+.board_wright05 tbody th {background:#f5f5f5;color:#3b3a3a;vertical-align:middle;text-align:center;padding:12px 9px;border-left:1px solid #ccc;border-bottom:1px solid #ccc;vertical-align:middle}
+.board_wright05 tbody td:first-child{border-left:none}
+.board_wright05 tbody td {text-align:left;padding:12px 9px;border-left:1px solid #ccc;border-bottom:1px solid #ccc;vertical-align:middle}
+.board_wright05 tbody tr.non th, .board_wright05 tbody tr.non td {padding:19px 9px 19px 9px}
+
+/* board_wright style06 */
+.board_wright06 {width:100%;border-top:1px solid #bbbec0;letter-spacing:0}
+.board_wright06 thead th{text-align:left;padding:13px 21px;font-size:13px;color:#1f1e1e;font-weight:bold;background:#eaedf0;vertical-align:middle;border-bottom:1px solid #bbbec0}
+.board_wright06 tbody th {background:#f5f5f5;color:#3b3a3a;vertical-align:middle}
+.board_wright06 tbody th, .board_wright06 tbody td {text-align:left;padding:6px 9px;border-bottom:1px solid #ccc;vertical-align:middle;line-height:17px}
+.board_wright06 tbody td.visa_empty {text-align:left;height:20px;padding:0;font-size:13px;color:#000;background:#fff;vertical-align:middle;border-bottom:1px solid #bbbec0}
+.board_wright06 tbody td.visa_apply {padding:12px 9px}
+
+/* board_search style01 */
+.board_search01 {width:100%;border:1px solid #c4c4c4}
+.board_search01 input[type="radio"] {margin-right:0px}
+.board_search01 tbody th {text-align:left;color:#3b3a3a;vertical-align:middle;padding:8px 0 8px 20px}
+.board_search01 tbody th.th_group {border-right:1px solid #ccc}
+.board_search01 tbody td {padding:8px 0 8px 7px;vertical-align:middle;color:#272727}
+.board_search01 tbody th.pdt_22, .board_search01 tbody td.pdt_22 {padding-top:22px}
+.board_search01 tbody th.pdb_22, .board_search01 tbody td.pdb_22 {padding-bottom:22px}
+/* 비자내비게이터 팝업 padding추가 - board_search style01 */
+.board_search01.nav_pop tbody th, .board_search01.nav_pop tbody td {padding:22px 0 22px 20px}
+
+/* board_file style01 */
+.board_file01 {width:100%;border-top:1px solid #c4c4c4;border-bottom:1px solid #ccc}
+.board_file01 thead th:first-child{background-image:none}
+.board_file01 thead th {text-align:center;background:#f7f7f7;color:#3b3a3a;padding:12px 0 13px 0;border-bottom:1px solid #ccc;background:url(../images/ico/th_bar.gif) #f6f6f6 no-repeat left center;vertical-align:middle}
+.board_file01 tbody tr td:first-child.point_td {padding-left:9px}
+.board_file01 tbody tr td:first-child {padding-left:25px}
+.board_file01.pop_fee_table tbody tr td {padding:6px 10px 6px 20px}
+.board_file01 tbody td {padding:6px 0 6px 9px;border-bottom:1px solid #ccc;vertical-align:middle}
+.board_file01 tbody td.align_c {padding-left:0}
+.board_file01 tbody tr td.first_nopad {padding-left:0;text-align:center}
+
+/* board_file style02 */
+.board_file02 {width:100%;border-top:1px solid #c4c4c4;border-bottom:1px solid #ccc}
+.board_file02 thead th:first-child{background-image:none}
+.board_file02 thead th {text-align:center;background:#f7f7f7;color:#3b3a3a;padding:12px 0 13px 0;border-bottom:1px solid #ccc;background:url(../images/ico/th_bar.gif) #f6f6f6 no-repeat left center;vertical-align:middle}
+.board_file02 tbody tr td:first-child.point_td {padding-left:9px}
+.board_file02 tbody tr td:first-child {padding-left:25px}
+.board_file02 tbody td {padding:10px 0 10px 9px;border-bottom:1px solid #ccc;vertical-align:middle}
+.board_file02 tbody td.align_c {padding-left:0}
+/* VGSQ02S.jsp - 체류자격별 사증안내 - 일반무사증상세 스타일 - 테이블 */
+.no_visa .board_file02 tbody tr td:first-child {padding-left:0} 
+
+/* APVC08A.jsp - board_file style01의 클래스 추가하여 적용 */
+.board_file01 tbody tr td.no_pad {padding:0}
+
+/* board_pop style01 */
+.board_pop01 {width:100%;border-top:1px solid #ccc;border-bottom:1px solid #ccc}
+.board_pop01 tbody th {text-align:left;background:#f6f6f6;color:#3b3a3a}
+.board_pop01 tbody th {padding:6px 0 6px 20px;border-bottom:1px solid #ccc}
+.board_pop01 tbody td {padding:6px 0 6px 10px;border-bottom:1px solid #ccc}
+
+/* 팝업 APVC16P.jsp - board_print style01 */
+.board_print01 {width:100%;border:1px solid #c1c1c1;border-bottom:1px dotted #000;border-collapse:separate}
+.board_print01 tbody th {font-size:18px;line-height:23px;text-align:center;vertical-align:middle;padding:12px 55px 17px}
+.board_print01 tbody td {text-align:center;font-size:13px;vertical-align:middle;padding:12px 0}
+.board_print01 tbody td.no_pad {padding:0}
+.board_print01 tbody td.no_pad img {display:inline-block}
+.border_dot_b {border-bottom:1px dotted #000}
+.border_dot_r {border-right:1px dotted #000}
+.board_wright01.pop_invi tbody th, .board_wright01.pop_invi tbody td {color:#000;vertical-align:middle}
+.board_wright01.pop_invi tbody th {line-height:17px;color:#000}
+
+/* board_print02 style */
+.board_print02 {width:100%;border-top:1px solid #bbbec0;letter-spacing:0}
+.board_print02 thead th:first-child {background-image:none}
+.board_print02 thead th {text-align:center;color:#3b3a3a;padding:12px 0 13px 0;border-bottom:1px solid #ccc;vertical-align:middle;background:url(../images/ico/th_bar.gif) #f6f6f6 no-repeat left center}
+.board_print02 thead th.th_group{background-image:none;text-align:left;padding:13px 21px;font-size:13px;color:#1f1e1e;font-weight:bold;background:#eaedf0;vertical-align:middle;border-bottom:1px solid #bbbec0}
+.board_print02 tbody td {text-align:center;padding:6px 9px;border-bottom:1px solid #ccc;vertical-align:middle}
+
+/*th 제목 총 건수*/
+.th_info {color:#8f8f8f !important;font-size:12px !important;margin-left:10px}
+.th_info b {color:#fc3538 !important}
+
+/* file list */
+.file_jpg {background: url(../images/ico/ico_jpg.gif) no-repeat;padding:2px 0 3px 21px;color:#272727}
+
+/* file_download */
+.file_list {position:relative}
+.file_list li {line-height:20px;padding-left:26px;background: url(../images/ico/ico_disk.gif) no-repeat 4px 5px;}
+.file_list .btn_grey{position:absolute;bottom:-7px;right:17px}
+/* CCNO02S.jsp - icon doc 파일 */
+.file_list02 li {line-height:20px;padding-left:26px;background: url(../images/ico/ico_doc.gif) no-repeat 0 0}
+
+/* btn_zone */
+.bottom_btn01 {text-align:right;margin-bottom:19px}
+.bottom_btn02 {text-align:right;padding-right:4px;margin-bottom:51px}
+.bottom_btn03 {text-align:center;margin-bottom:19px}
+/* CCFA02S.jsp - 목록 위 border-top */
+.bottom_btn03.pad_bor_top {padding-top:45px;border-top:1px solid #ccc}
+.bottom_btn04 {overflow:hidden}
+
+/* satisfaction */
+.satisfaction {border-radius:3px; border:1px solid #b2b2b2}
+.satisfaction dl {border-bottom: 1px solid #d1d1d1;padding:25px 20px 21px 20px}
+.satisfaction dt, .satisfaction dd {display:inline;overflow:hidden;color:#031824;font-size:13px}
+.satisfaction dt {padding-right:10px}
+.satisfaction dd {margin-left:15px}
+.satisfaction dd img {display:inline;vertical-align:middle}
+.satisfaction dd input[type=radio] {margin-top:2px;}
+.satisfaction p {padding:14px 20px 12px 20px; background:#f5f5f5;color:#696969}
+.satisfaction p span:first-child{margin-left:0}
+.satisfaction p span{margin-left:7px}
+.satisfaction dd .btn_white {vertical-align:middle}
+
+/*테이블 주소*/
+.tb_address {margin-bottom:5px}
+.tb_address span{display:inline-block;vertical-align:middle}
+
+

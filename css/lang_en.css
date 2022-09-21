@@ -1,0 +1,215 @@
+@charset "utf-8";
+
+body.en {	
+	font-family:'Arial', 'sans-serif';
+}
+/* 메인 메뉴 관련 */
+body.en .main_menu {font-size:17px;font-weight:bold;font-family:'Arial', 'sans-serif', 'NanumGothic', '나눔고딕';color:#2c2e2f}
+body.en #main_header .main_menu {width:177px;top:80px}
+body.en #main_header .main_menu > li {margin-top:15px}
+body.en #main_header .main_menu .m_2dep > li {font-size:13px;padding-bottom:11px}
+
+/* 메인 컨텐츠 관련 */
+body.en .visa_con {width:775px}
+body.en .navi_link span {letter-spacing:0;padding-top:10px}
+body.en .navi_link .btn_go {margin:0 0 0 5px}
+body.en #main_container .nav_search_box {width:100%;border:none;padding:0}
+body.en #main_container .nav_search_box .nav_search .nav_search01, body.en #main_container .nav_search_box .nav_search .nav_search05 {width:100px}
+body.en #main_container .nav_search_box .nav_search .nav_search02, body.en #main_container .nav_search_box .nav_search .nav_search04, body.en #main_container .nav_search_box .nav_search .nav_search06, body.en #main_container .nav_search_box .nav_search .nav_search08 {margin-left:5px;width:150px}
+body.en #main_container .nav_search_box .nav_search .nav_search03, body.en #main_container .nav_search_box .nav_search .nav_search07 {margin-left:30px;width:100px}
+body.en #main_container .nav_search_box .nav_search09 {margin-left:20px}
+/* 서비스 바로가기 */
+body.en #main_container .main_con03 .link_service {width:370px}
+body.en #main_container .main_con03 .link_service ul {width:178px}
+body.en #main_container .main_con03 .link_service li {width:178px}
+body.en #main_container .main_con03 .link_service li a {letter-spacing:-0.5px;} /* 20171914 웹표준화작업 수정 ysj */
+body.en #main_container .main_con03 .link_service ul.link_s_02 {margin-left:12px}
+/* 공지사항 */
+body.en #main_container .main_con03 .notice {padding:0 23px}
+body.en #main_container .notice_tab {width:280px}
+body.en #main_container .notice_tab ul {width:280px}
+body.en #main_container .notice .notice_view li {width:280px}
+body.en #main_container .notice .notice_view li a {width:200px}
+/* 공익사업 투자이민 */
+body.en .imm_link span {letter-spacing:-0.2px}
+
+/* 메인 컨텐츠 - 입국목적별 비자안내 */
+body.en .guide_5 a.guide_tit {font-size:13px;width:149px;padding:31px 0 0 42px}
+body.en .guide_5 a.guide_tit span {display:inline-block;width:120px}
+body.en .guide_5 a.guide_tit span.long_tit_guide {margin-top:-5px}
+
+/* 서브페이지 관련 */
+body.en #header .main_menu {top:38px}
+body.en #header .main_menu li {font-size:16px;padding:3px 0 0 28px}
+body.en #header .main_menu li.main_m0, body.en #header .main_menu li.main_m1, body.en #header .main_menu li.main_m4 {margin-top:10px}
+body.en #header .main_menu li.main_m2 {width:142px}
+body.en #header .main_menu li.main_m3 {width:82px}
+
+div#EN, div.EN, h4#En, h4.EN {font-family:'Arial', 'sans-serif', 'NanumGothic', '나눔고딕';}
+
+/* 테이블 red_point와 red_point 없을시 */
+body.en table .mgl_16 {margin-left:0}
+
+/* VGSQ01S.jsp - 입국목적별 비자안내 */
+body.en .guide_3 a.guide_tit {font-size:15px;width:172px;padding:35px 0 0 65px}
+body.en .guide_3 a.guide_tit span {display:inline-block;width:126px}
+body.en .guide_3 a.guide_tit span.long_tit_guide {margin-top:-5px}
+
+/* VGSQ02S.jsp - 영문시 클래스 추가 스타일 */
+body.en .no_visa_list ul li.en_long_visa a {padding:3px 0 15px}
+body.en .red_notice {letter-spacing:0}
+
+/* VGSQ01S.jsp - 영문시 클래스 추가 스타일 */
+body.en .guide_3 ul.guide_2st {padding:8px 15px 20px}
+
+/* SL01A.jsp - 영문시 클래스 추가 스타일 */
+body.en .login_radio_box02 {margin:0 0 15px 118px}
+body.en .login_contents .tab_list02 li a {min-width:160px}
+body.en .btn_login02 {margin:0 0 0 150px}
+body.en .login_id {margin-left:58px}
+body.en p.login_red_txt {letter-spacing:0}
+body.en .login_form01.entry_form {padding:75px 0 60px}
+body.en p.login_red_txt.login_pub_mar {margin:0 0 0 268px}
+body.en .btn_login01 {margin-left:15px;font-size:17px;padding:14px 0;height:48px;line-height:1.4}
+body.en .login01_center {margin-left:20px}
+body.en .login_radio_box03 {margin-left:13px}
+body.en .login_form01.basic_login p.login_red_txt {margin-left:193px}
+body.en .login_form01.basic_login .btn_login01 {height:76px;line-height:76px;width:145px;font-size:18px;margin-left:17px;padding:0}
+/* 회원정보조회 탭버튼 길이 조절 */
+body.en .tab_list02 li a.txt_long_tab {min-width:220px}
+
+/* APVE01S.jsp - 영문시 클래스 추가 스타일 */
+body.en .pattern_tit span.pattern_black {font-size:24px}
+
+/* CCFA01S.jsp - 영문시 클래스 추가 스타일 */
+body.en .search_style01 .faq_box02 p {margin:12px 25px 0 10px}
+
+/* MPNM01A.jsp - 영문시 클래스 추가 스타일 */
+body.en .modi_bottom_t {font-size:13px}
+body.en a.btn_pw_blue01 {padding:16px 14px 16px 15px}
+
+/* MPNM02A.jsp - 영문시 클래스 추가 스타일 */
+body.en a.btn_modi_blue01.size_reg01 {padding:16px 14px 16px 15px}
+body.en a.btn_modi_grey01.size_reg02 {padding:16px 21px}
+
+/* IVEI01S.jsp - 영문시 클래스 추가 스타일 */
+body.en p.summay_h4 {letter-spacing:0}
+body.en .invesor_deals .tab_list02 li a, body.en .invesor_areas .tab_list02 li a {min-width:220px}
+body.en .invesor_deals .tab_list02 li a.txt_long_tab01, body.en .invesor_areas .tab_list02 li a.txt_long_tab01 {min-width:260px}
+body.en .invesor_deals .tab_list02 li a.txt_long_tab02, body.en .invesor_areas .tab_list02 li a.txt_long_tab02 {min-width:360px}
+body.en .invesor_deals .align_mar02, body.en .invesor_deals .align_mar04, body.en .invesor_deals .align_mar06 {width:130px;margin-left:5px}
+body.en .invesor_deals .align_mar08 {width:169px}
+body.en .invesor_deals .align_mar06 {margin-left:54px}
+body.en .invesor_deals .align_mar03, body.en .invesor_deals .align_mar07 {margin-left:20px}
+/* IVEI02S.jsp */
+body.en .invesor_areas .align_mar02, body.en .invesor_areas .align_mar04, body.en .invesor_areas .align_mar06 {width:130px;margin-left:5px}
+body.en .invesor_areas .align_mar08 {width:169px}
+body.en .invesor_areas .align_mar06 {margin-left:68px}
+body.en .invesor_areas .align_mar03, body.en .invesor_areas .align_mar07 {margin-left:20px}
+
+/* CCFA06A.jsp - 영문시 클래스 추가 스타일 */
+body.en dd.check_inquery_dd .board_modi01 tbody th {padding-left:0}
+body.en a.btn_modi_blue01.size_reg03 {padding:37px 28px;right:85px}
+body.en .pw_modi dd.modi_con.check_inquery_dd {padding:23px 85px 20px 82px}
+
+/* question icon 영문시 좀더 붙게 */
+body.en .question {margin-left:5px}
+
+/* SIWS01S.jsp - 방문취업 당첨자 조회 스타일 */
+body.en .bakmoon .bakmoon04, body.en .bakmoon .bakmoon08 {width:150px}
+body.en .bakmoon .bakmoon06 {width:113px;margin-left:6px}
+body.en .bakmoon .bakmoon02 {margin-left:40px;width:113px}
+body.en .bakmoon .bakmoon08 {width:138px}
+body.en .bakmoon .bakmoon04 {margin-left:56px}
+body.en .bakmoon .bakmoon03, body.en  .bakmoon .bakmoon07 {margin-left:20px}
+body.en .bakmoon a.btn_blue_b.btn_bangmun {right:17px;padding:25px 18px}
+
+/* SIPR01S.jsp - 진행현황 조회 스타일 */ 
+/* 재외공관 width, margin 조절 */
+body.en .process_search .process_mar02 {margin-left:53px}
+body.en .process_search .process_mar14 {margin-left:10px}
+/* 전자사증,단체비자,비자발급인정서 width, margin 조절 */
+body.en .process_search .process_mar05 {margin-left:15px;}
+body.en .process_search .process_mar06, body.en .process_search .process_mar10 {margin-left:20px}
+/* 조회버튼 */
+body.en .process_search .btn_blue_b.pad_detail {padding:26px 12px}
+
+/* CCSM02S.jsp - dt dd-ul,li 사이트맵 스타일 */
+body.en .site_map_wrap dt {letter-spacing:0}
+
+/* 공인인증서 로그인시 패스워드 찾기 */
+body.en .pw_modi02 .board_modi01 tbody th {padding:6px 0}
+body.en .pw_modi02 a.btn_modi_blue01.size_reg01 {padding:16px 10px}
+body.en .pw_modi02 a.size_reg02.btn_modi_grey01 {padding:18px 17px;right:40px}
+body.en .pw_modi02 .pw_modi dd.pw_reset.modi_con {padding:30px 35px 30px 38px}
+
+/* 비자내비게이터 탭버튼 */
+body.en .tab_list03 {height:38px}
+body.en .tab_list03 li a.tab_big {padding:6px 15px 7px}
+body.en .tab_list03 li.on a.tab_big {padding:8px 14px 7px}
+
+/* 자주묻는 질문 버튼 크기 조절 */
+body.en .square_notice {width:93px}
+
+/* 게이트 페이지 */
+body.en .elect_apply_box p.elect_apply_tit {letter-spacing:0}
+
+/* IVIS01S.jsp - 투자이민센터 스타일 변경 */
+body.en .invest_center dl dt {width:715px;font-family:'Arial', 'sans-serif'}
+
+/* 회원가입관련 */
+body.en .join_top_tit .join_tit01 {font-size:34px;font-family:'Arial', 'sans-serif'}
+body.en .join_top_tit dl dt {letter-spacing:0}
+body.en .guide_2 a.guide_tit {width:252px;height:70px;padding:23px 0 0 95px;font-size:17px}
+body.en .guide_2 a.guide_tit span {display:inline-block;width:190px}
+
+/* 신청절차관련 */
+body.en .apply_guide li {float:none;padding:0;margin-top:7px;border-right:none}
+body.en .apply_guide li:first-child {margin-top:0}
+body.en .apply_guide li a {height:30px;line-height:30px}
+
+/* 마이페이지 MPMS02S.jsp 영문 시 */
+body.en .tab_list02 li a {min-width:150px}
+body.en .action_detail_box dl.left_float_dl {margin-left:16px}
+body.en .action_detail_box dd ul {font-size:12px;width:180px}
+
+/* CCSM01S.sjp 사이트 이용방법 탭 늘리기 */
+body.en .tab_list02.use_tab li a {min-width:200px}
+
+/* SIPR01S.jsp */
+body.en .search_style01 .check_application label {letter-spacing:-0.4px;}
+
+/* SL01A.jsp */
+body.en dl.public_notice_dl {display:none}
+
+/* APGV01S.jsp 단체비자 유치확인 */
+body.en .en_w01 {width:235px !important}
+body.en .en_w02 {width:180px !important}
+body.en .btn_blue_b.pad_detail02 {padding:40px 20px;margin-left:20px}
+
+/* 조회/발급 비자발급인정서, 개인  */
+body.en .search_style01 .search_label02 {margin-left:20px} 
+body.en .search_style01 .search_label04 {margin-left:20px}
+body.en .search_style01 .search_label06 {margin-left:23px}
+body.en .search_style01 .search_w_change01 {width:120px}
+body.en .search_style01 .search_w_change02 {width:248px}
+body.en .search_style01 .btn_search_img {margin:8px 0 0 20px}
+
+/* 초청확인 */
+body.en input.check_input_lang {width:250px}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
